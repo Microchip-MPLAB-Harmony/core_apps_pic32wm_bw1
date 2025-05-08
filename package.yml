@@ -1,12 +1,18 @@
 package:
   format-version: "1.0.0"
-  name: "replaceme"
+  name: "core_apps_pic32wm_bw1"
   type: "application"
-  status: "beta"
+  status: "production"
   required: false
-  version: "1.0.0"
+  version: "v1.0.0"
 
   dependencies:
-    - name: "csp"
+    - name: "bsp"
       type: "package"
-      version: "3.14.0"
+      version: "dev"
+    - name: "FreeRTOS-Kernel"
+      type: "package"
+      version: "V11.1.0"
+    - name: "core"
+      type: "package"
+      version: "dev"

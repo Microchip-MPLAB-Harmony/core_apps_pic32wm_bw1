@@ -10,3 +10,7 @@
 *.jar binary
 *.exe binary
 *.chm binary
+*.png binary
+*.ico binary
+*.jpg binary
+*.gif binary

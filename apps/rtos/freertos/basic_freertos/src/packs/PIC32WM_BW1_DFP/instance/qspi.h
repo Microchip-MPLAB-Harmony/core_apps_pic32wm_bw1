@@ -20,15 +20,15 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_QSPI_INSTANCE_
-#define _002_QSPI_INSTANCE_
+#ifndef _BZ45_QSPI_INSTANCE_
+#define _BZ45_QSPI_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for QSPI peripheral ========== */
-#define QSPI_DMAC_ID_RX                          (43)       
-#define QSPI_DMAC_ID_TX                          (44)       
-#define QSPI_HADDR_MSB                           (23)       
-#define QSPI_INSTANCE_ID                         (64)       
-#define QSPI_OCMS                                (1)        
+#define QSPI_DMAC_ID_RX                          (43)
+#define QSPI_DMAC_ID_TX                          (44)
+#define QSPI_HADDR_MSB                           (23)
+#define QSPI_INSTANCE_ID                         (64)
+#define QSPI_OCMS                                (1)
 
-#endif /* _002_QSPI_INSTANCE_ */
+#endif /* _BZ45_QSPI_INSTANCE_ */

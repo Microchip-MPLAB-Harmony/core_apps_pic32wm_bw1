@@ -20,11 +20,11 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_CMCC_INSTANCE_
-#define _002_CMCC_INSTANCE_
+#ifndef _BZ45_CMCC_INSTANCE_
+#define _BZ45_CMCC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for CMCC peripheral ========== */
-#define CMCC_INSTANCE_ID                         (33)       
+#define CMCC_INSTANCE_ID                         (33)
 
-#endif /* _002_CMCC_INSTANCE_ */
+#endif /* _BZ45_CMCC_INSTANCE_ */

@@ -20,7 +20,7 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_CRU_INSTANCE_
-#define _002_CRU_INSTANCE_
+#ifndef _BZ45_CRU_INSTANCE_
+#define _BZ45_CRU_INSTANCE_
 
-#endif /* _002_CRU_INSTANCE_ */
+#endif /* _BZ45_CRU_INSTANCE_ */

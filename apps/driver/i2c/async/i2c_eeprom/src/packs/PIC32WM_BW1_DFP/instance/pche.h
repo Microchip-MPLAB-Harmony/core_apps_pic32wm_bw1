@@ -20,7 +20,7 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_PCHE_INSTANCE_
-#define _002_PCHE_INSTANCE_
+#ifndef _BZ45_PCHE_INSTANCE_
+#define _BZ45_PCHE_INSTANCE_
 
-#endif /* _002_PCHE_INSTANCE_ */
+#endif /* _BZ45_PCHE_INSTANCE_ */

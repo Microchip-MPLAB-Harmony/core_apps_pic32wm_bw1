@@ -20,14 +20,14 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_CCL_INSTANCE_
-#define _002_CCL_INSTANCE_
+#ifndef _BZ45_CCL_INSTANCE_
+#define _BZ45_CCL_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for CCL peripheral ========== */
-#define CCL_GCLK_ID                              (0)        
-#define CCL_INSTANCE_ID                          (70)       
-#define CCL_LUT_NUM                              (2)        
-#define CCL_SEQ_NUM                              (2)        
+#define CCL_GCLK_ID                              (0)
+#define CCL_INSTANCE_ID                          (70)
+#define CCL_LUT_NUM                              (2)
+#define CCL_SEQ_NUM                              (2)
 
-#endif /* _002_CCL_INSTANCE_ */
+#endif /* _BZ45_CCL_INSTANCE_ */

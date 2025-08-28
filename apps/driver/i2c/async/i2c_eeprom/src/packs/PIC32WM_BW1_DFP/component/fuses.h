@@ -20,8 +20,10 @@
  */
 
 /*  file generated from device description file (ATDF) version 2024-12-05T09:04:59Z  */
-#ifndef _002_FUSES_COMPONENT_H_
-#define _002_FUSES_COMPONENT_H_
+#ifndef _BZ45_FUSES_COMPONENT_H_
+#define _BZ45_FUSES_COMPONENT_H_
+
+#include "core_cm4.h"
 
 /* ************************************************************************** */
 /*                     SOFTWARE API DEFINITION FOR FUSES                      */
@@ -131,7 +133,7 @@
 #define FUSES_DEVCFG4_RTCEVENT_SEL(value)     (FUSES_DEVCFG4_RTCEVENT_SEL_Msk & (_UINT32_(value) << FUSES_DEVCFG4_RTCEVENT_SEL_Pos)) /* Assignment of value for RTCEVENT_SEL in the FUSES_DEVCFG4 register */
 #define   FUSES_DEVCFG4_RTCEVENT_SEL_ONE_SEC_Val _UINT32_(0x0)                                        /* (FUSES_DEVCFG4) 1-Second Clock  */
 #define   FUSES_DEVCFG4_RTCEVENT_SEL_ALARM_PULSE_Val _UINT32_(0x1)                                        /* (FUSES_DEVCFG4) Alarm Pulse  */
-#define   FUSES_DEVCFG4_RTCEVENT_SEL_32_KHZ_Val _UINT32_(0x1)                                        /* (FUSES_DEVCFG4) 32 kHz Clock  */
+#define   FUSES_DEVCFG4_RTCEVENT_SEL_32_KHZ_Val _UINT32_(0x2)                                        /* (FUSES_DEVCFG4) 32 kHz Clock  */
 #define FUSES_DEVCFG4_RTCEVENT_SEL_ONE_SEC    (FUSES_DEVCFG4_RTCEVENT_SEL_ONE_SEC_Val << FUSES_DEVCFG4_RTCEVENT_SEL_Pos) /* (FUSES_DEVCFG4) 1-Second Clock Position */
 #define FUSES_DEVCFG4_RTCEVENT_SEL_ALARM_PULSE (FUSES_DEVCFG4_RTCEVENT_SEL_ALARM_PULSE_Val << FUSES_DEVCFG4_RTCEVENT_SEL_Pos) /* (FUSES_DEVCFG4) Alarm Pulse Position */
 #define FUSES_DEVCFG4_RTCEVENT_SEL_32_KHZ     (FUSES_DEVCFG4_RTCEVENT_SEL_32_KHZ_Val << FUSES_DEVCFG4_RTCEVENT_SEL_Pos) /* (FUSES_DEVCFG4) 32 kHz Clock Position */
@@ -1021,4 +1023,4 @@ typedef struct
 
 
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _002_FUSES_COMPONENT_H_ */
+#endif /* _BZ45_FUSES_COMPONENT_H_ */

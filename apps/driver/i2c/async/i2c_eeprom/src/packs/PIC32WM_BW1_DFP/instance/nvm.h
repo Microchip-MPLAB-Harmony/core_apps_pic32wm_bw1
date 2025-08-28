@@ -20,12 +20,12 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_NVM_INSTANCE_
-#define _002_NVM_INSTANCE_
+#ifndef _BZ45_NVM_INSTANCE_
+#define _BZ45_NVM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for NVM peripheral ========== */
-#define NVM_PAGE_SIZE                            (4096)     
-#define NVM_ROW_SIZE                             (1024)     
+#define NVM_PAGE_SIZE                            (4096)
+#define NVM_ROW_SIZE                             (1024)
 
-#endif /* _002_NVM_INSTANCE_ */
+#endif /* _BZ45_NVM_INSTANCE_ */

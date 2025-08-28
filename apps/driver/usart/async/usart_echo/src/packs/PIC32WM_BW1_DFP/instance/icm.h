@@ -20,11 +20,11 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_ICM_INSTANCE_
-#define _002_ICM_INSTANCE_
+#ifndef _BZ45_ICM_INSTANCE_
+#define _BZ45_ICM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ICM peripheral ========== */
-#define ICM_INSTANCE_ID                          (75)       
+#define ICM_INSTANCE_ID                          (75)
 
-#endif /* _002_ICM_INSTANCE_ */
+#endif /* _BZ45_ICM_INSTANCE_ */

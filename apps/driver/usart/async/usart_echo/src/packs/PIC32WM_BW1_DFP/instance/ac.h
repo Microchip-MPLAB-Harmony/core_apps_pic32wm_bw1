@@ -20,18 +20,18 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_AC_INSTANCE_
-#define _002_AC_INSTANCE_
+#ifndef _BZ45_AC_INSTANCE_
+#define _BZ45_AC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for AC peripheral ========== */
-#define AC_COMPCTRL_MUXNEG_OPAMP                 (7)        
-#define AC_GCLK_ID                               (20)       
-#define AC_IMPLEMENTS_VDBLR                      (0)        
-#define AC_INSTANCE_ID                           (71)       
-#define AC_LOAD_CALIB                            (0)        
-#define AC_NUM_CMP                               (2)        
-#define AC_PAIRS                                 (1)        
-#define AC_SPEED_LEVELS                          (2)        
+#define AC_COMPCTRL_MUXNEG_OPAMP                 (7)
+#define AC_GCLK_ID                               (20)
+#define AC_IMPLEMENTS_VDBLR                      (0)
+#define AC_INSTANCE_ID                           (71)
+#define AC_LOAD_CALIB                            (0)
+#define AC_NUM_CMP                               (2)
+#define AC_PAIRS                                 (1)
+#define AC_SPEED_LEVELS                          (2)
 
-#endif /* _002_AC_INSTANCE_ */
+#endif /* _BZ45_AC_INSTANCE_ */

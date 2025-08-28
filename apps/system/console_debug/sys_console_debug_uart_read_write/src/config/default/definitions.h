@@ -54,9 +54,9 @@
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
+#include "bsp/bsp.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
-#include "bsp/bsp.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
@@ -77,7 +77,7 @@ extern "C" {
 #define DEVICE_NAME          "PIC32WM_BW1"
 #define DEVICE_ARCH          "CORTEX-M4"
 #define DEVICE_FAMILY        "PIC32CX_BZ2"
-#define DEVICE_SERIES        "002"
+#define DEVICE_SERIES        "BZ45"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 64000000U

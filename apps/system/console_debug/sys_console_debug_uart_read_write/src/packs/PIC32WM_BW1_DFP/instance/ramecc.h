@@ -20,13 +20,13 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_RAMECC_INSTANCE_
-#define _002_RAMECC_INSTANCE_
+#ifndef _BZ45_RAMECC_INSTANCE_
+#define _BZ45_RAMECC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for RAMECC peripheral ========== */
-#define RAMECC_INSTANCE_ID                       (36)       
-#define RAMECC_RAMADDR_BITS                      (13)       
-#define RAMECC_RAMBANK_NUM                       (4)        
+#define RAMECC_INSTANCE_ID                       (36)
+#define RAMECC_RAMADDR_BITS                      (13)
+#define RAMECC_RAMBANK_NUM                       (4)
 
-#endif /* _002_RAMECC_INSTANCE_ */
+#endif /* _BZ45_RAMECC_INSTANCE_ */

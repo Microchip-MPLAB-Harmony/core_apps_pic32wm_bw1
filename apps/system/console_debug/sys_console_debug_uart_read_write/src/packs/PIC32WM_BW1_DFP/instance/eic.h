@@ -20,16 +20,16 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_EIC_INSTANCE_
-#define _002_EIC_INSTANCE_
+#ifndef _BZ45_EIC_INSTANCE_
+#define _BZ45_EIC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for EIC peripheral ========== */
-#define EIC_EXTINT_NUM                           (4)        
-#define EIC_GCLK_ID                              (0)        
-#define EIC_INSTANCE_ID                          (2)        
-#define EIC_NUMBER_OF_CONFIG_REGS                (2)        
-#define EIC_NUMBER_OF_DPRESCALER_REGS            (2)        
-#define EIC_NUMBER_OF_INTERRUPTS                 (4)        
+#define EIC_EXTINT_NUM                           (4)
+#define EIC_GCLK_ID                              (0)
+#define EIC_INSTANCE_ID                          (2)
+#define EIC_NUMBER_OF_CONFIG_REGS                (2)
+#define EIC_NUMBER_OF_DPRESCALER_REGS            (2)
+#define EIC_NUMBER_OF_INTERRUPTS                 (4)
 
-#endif /* _002_EIC_INSTANCE_ */
+#endif /* _BZ45_EIC_INSTANCE_ */

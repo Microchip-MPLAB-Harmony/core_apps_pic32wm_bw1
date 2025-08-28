@@ -20,8 +20,10 @@
  */
 
 /*  file generated from device description file (ATDF) version 2024-12-05T09:04:59Z  */
-#ifndef _002_ICM_COMPONENT_H_
-#define _002_ICM_COMPONENT_H_
+#ifndef _BZ45_ICM_COMPONENT_H_
+#define _BZ45_ICM_COMPONENT_H_
+
+#include "core_cm4.h"
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR ICM                       */
@@ -413,4 +415,4 @@ typedef struct
 /* ICM_DESCRIPTOR memory section attribute */
 #define SECTION_ICM_DESCRIPTOR
 
-#endif /* _002_ICM_COMPONENT_H_ */
+#endif /* _BZ45_ICM_COMPONENT_H_ */

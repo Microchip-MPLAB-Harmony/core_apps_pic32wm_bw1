@@ -20,8 +20,8 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_ADCHS_INSTANCE_
-#define _002_ADCHS_INSTANCE_
+#ifndef _BZ45_ADCHS_INSTANCE_
+#define _BZ45_ADCHS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for ADCHS peripheral ========== */
@@ -30,4 +30,4 @@
 #define ADCHS_AIN_8                              (8)        /* BandGap Reference (internal AN8) */
 #define ADCHS_AIN_9                              (9)        /* IVref 1.2V (internal AN9) */
 
-#endif /* _002_ADCHS_INSTANCE_ */
+#endif /* _BZ45_ADCHS_INSTANCE_ */

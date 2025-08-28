@@ -20,19 +20,19 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_TC3_INSTANCE_
-#define _002_TC3_INSTANCE_
+#ifndef _BZ45_TC3_INSTANCE_
+#define _BZ45_TC3_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC3 peripheral ========== */
-#define TC3_CC_NUM                               (2)        
-#define TC3_DMAC_ID_MC_0                         (39)       
-#define TC3_DMAC_ID_MC_1                         (40)       
-#define TC3_DMAC_ID_OVF                          (38)       
-#define TC3_EXT                                  (0)        
-#define TC3_GCLK_ID                              (6)        
-#define TC3_INSTANCE_ID                          (8)        
-#define TC3_MASTER_SLAVE_MODE                    (2)        
-#define TC3_OW_NUM                               (2)        
+#define TC3_CC_NUM                               (2)
+#define TC3_DMAC_ID_MC_0                         (39)
+#define TC3_DMAC_ID_MC_1                         (40)
+#define TC3_DMAC_ID_OVF                          (38)
+#define TC3_EXT                                  (0)
+#define TC3_GCLK_ID                              (6)
+#define TC3_INSTANCE_ID                          (8)
+#define TC3_MASTER_SLAVE_MODE                    (2)
+#define TC3_OW_NUM                               (2)
 
-#endif /* _002_TC3_INSTANCE_ */
+#endif /* _BZ45_TC3_INSTANCE_ */

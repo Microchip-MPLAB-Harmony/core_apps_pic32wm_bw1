@@ -20,13 +20,13 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_PUKCC_INSTANCE_
-#define _002_PUKCC_INSTANCE_
+#ifndef _BZ45_PUKCC_INSTANCE_
+#define _BZ45_PUKCC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PUKCC peripheral ========== */
-#define PUKCC_INSTANCE_ID                        (76)       
-#define PUKCC_RAM_ADDR_SIZE                      (12)       
-#define PUKCC_ROM_ADDR_SIZE                      (16)       
+#define PUKCC_INSTANCE_ID                        (76)
+#define PUKCC_RAM_ADDR_SIZE                      (12)
+#define PUKCC_ROM_ADDR_SIZE                      (16)
 
-#endif /* _002_PUKCC_INSTANCE_ */
+#endif /* _BZ45_PUKCC_INSTANCE_ */

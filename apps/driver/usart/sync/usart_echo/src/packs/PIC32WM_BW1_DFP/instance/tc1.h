@@ -20,19 +20,19 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_TC1_INSTANCE_
-#define _002_TC1_INSTANCE_
+#ifndef _BZ45_TC1_INSTANCE_
+#define _BZ45_TC1_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TC1 peripheral ========== */
-#define TC1_CC_NUM                               (2)        
-#define TC1_DMAC_ID_MC_0                         (33)       
-#define TC1_DMAC_ID_MC_1                         (34)       
-#define TC1_DMAC_ID_OVF                          (32)       
-#define TC1_EXT                                  (0)        
-#define TC1_GCLK_ID                              (23)       
-#define TC1_INSTANCE_ID                          (6)        
-#define TC1_MASTER_SLAVE_MODE                    (2)        
-#define TC1_OW_NUM                               (2)        
+#define TC1_CC_NUM                               (2)
+#define TC1_DMAC_ID_MC_0                         (33)
+#define TC1_DMAC_ID_MC_1                         (34)
+#define TC1_DMAC_ID_OVF                          (32)
+#define TC1_EXT                                  (0)
+#define TC1_GCLK_ID                              (23)
+#define TC1_INSTANCE_ID                          (6)
+#define TC1_MASTER_SLAVE_MODE                    (2)
+#define TC1_OW_NUM                               (2)
 
-#endif /* _002_TC1_INSTANCE_ */
+#endif /* _BZ45_TC1_INSTANCE_ */

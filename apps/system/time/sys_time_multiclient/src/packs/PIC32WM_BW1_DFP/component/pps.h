@@ -20,8 +20,10 @@
  */
 
 /*  file generated from device description file (ATDF) version 2024-12-05T09:04:59Z  */
-#ifndef _002_PPS_COMPONENT_H_
-#define _002_PPS_COMPONENT_H_
+#ifndef _BZ45_PPS_COMPONENT_H_
+#define _BZ45_PPS_COMPONENT_H_
+
+#include "core_cm4.h"
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR PPS                       */
@@ -36,7 +38,6 @@
 #define   PPS_EXTINT0R_EXTINT0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_EXTINT0R) RPA9  */
 #define   PPS_EXTINT0R_EXTINT0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_EXTINT0R) RPA3  */
 #define   PPS_EXTINT0R_EXTINT0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_EXTINT0R) RPA7  */
-#define   PPS_EXTINT0R_EXTINT0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_EXTINT0R) RPA11  */
 #define   PPS_EXTINT0R_EXTINT0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_EXTINT0R) RPB0  */
 #define   PPS_EXTINT0R_EXTINT0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_EXTINT0R) RPB4  */
 #define   PPS_EXTINT0R_EXTINT0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_EXTINT0R) RPB8  */
@@ -52,7 +53,6 @@
 #define PPS_EXTINT0R_EXTINT0_RPA9             (PPS_EXTINT0R_EXTINT0_RPA9_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPA9 Position */
 #define PPS_EXTINT0R_EXTINT0_RPA3             (PPS_EXTINT0R_EXTINT0_RPA3_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPA3 Position */
 #define PPS_EXTINT0R_EXTINT0_RPA7             (PPS_EXTINT0R_EXTINT0_RPA7_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPA7 Position */
-#define PPS_EXTINT0R_EXTINT0_RPA11            (PPS_EXTINT0R_EXTINT0_RPA11_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPA11 Position */
 #define PPS_EXTINT0R_EXTINT0_RPB0             (PPS_EXTINT0R_EXTINT0_RPB0_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPB0 Position */
 #define PPS_EXTINT0R_EXTINT0_RPB4             (PPS_EXTINT0R_EXTINT0_RPB4_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPB4 Position */
 #define PPS_EXTINT0R_EXTINT0_RPB8             (PPS_EXTINT0R_EXTINT0_RPB8_Val << PPS_EXTINT0R_EXTINT0_Pos) /* (PPS_EXTINT0R) RPB8 Position */
@@ -77,14 +77,12 @@
 #define   PPS_EXTINT1R_EXTINT1_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_EXTINT1R) RPA0  */
 #define   PPS_EXTINT1R_EXTINT1_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_EXTINT1R) RPA4  */
 #define   PPS_EXTINT1R_EXTINT1_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_EXTINT1R) RPA8  */
-#define   PPS_EXTINT1R_EXTINT1_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_EXTINT1R) RPA12  */
 #define   PPS_EXTINT1R_EXTINT1_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_EXTINT1R) RPB1  */
 #define   PPS_EXTINT1R_EXTINT1_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_EXTINT1R) RPB5  */
 #define   PPS_EXTINT1R_EXTINT1_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_EXTINT1R) RPB9  */
 #define   PPS_EXTINT1R_EXTINT1_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_EXTINT1R) RPB13  */
 #define   PPS_EXTINT1R_EXTINT1_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_EXTINT1R) RPA3  */
 #define   PPS_EXTINT1R_EXTINT1_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_EXTINT1R) RPA7  */
-#define   PPS_EXTINT1R_EXTINT1_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_EXTINT1R) RPA11  */
 #define   PPS_EXTINT1R_EXTINT1_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_EXTINT1R) RPB0  */
 #define   PPS_EXTINT1R_EXTINT1_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_EXTINT1R) RPB4  */
 #define   PPS_EXTINT1R_EXTINT1_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_EXTINT1R) RPB8  */
@@ -93,14 +91,12 @@
 #define PPS_EXTINT1R_EXTINT1_RPA0             (PPS_EXTINT1R_EXTINT1_RPA0_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA0 Position */
 #define PPS_EXTINT1R_EXTINT1_RPA4             (PPS_EXTINT1R_EXTINT1_RPA4_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA4 Position */
 #define PPS_EXTINT1R_EXTINT1_RPA8             (PPS_EXTINT1R_EXTINT1_RPA8_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA8 Position */
-#define PPS_EXTINT1R_EXTINT1_RPA12            (PPS_EXTINT1R_EXTINT1_RPA12_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA12 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB1             (PPS_EXTINT1R_EXTINT1_RPB1_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB1 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB5             (PPS_EXTINT1R_EXTINT1_RPB5_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB5 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB9             (PPS_EXTINT1R_EXTINT1_RPB9_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB9 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB13            (PPS_EXTINT1R_EXTINT1_RPB13_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB13 Position */
 #define PPS_EXTINT1R_EXTINT1_RPA3             (PPS_EXTINT1R_EXTINT1_RPA3_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA3 Position */
 #define PPS_EXTINT1R_EXTINT1_RPA7             (PPS_EXTINT1R_EXTINT1_RPA7_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA7 Position */
-#define PPS_EXTINT1R_EXTINT1_RPA11            (PPS_EXTINT1R_EXTINT1_RPA11_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPA11 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB0             (PPS_EXTINT1R_EXTINT1_RPB0_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB0 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB4             (PPS_EXTINT1R_EXTINT1_RPB4_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB4 Position */
 #define PPS_EXTINT1R_EXTINT1_RPB8             (PPS_EXTINT1R_EXTINT1_RPB8_Val << PPS_EXTINT1R_EXTINT1_Pos) /* (PPS_EXTINT1R) RPB8 Position */
@@ -125,7 +121,6 @@
 #define   PPS_EXTINT2R_EXTINT2_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_EXTINT2R) RPA0  */
 #define   PPS_EXTINT2R_EXTINT2_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_EXTINT2R) RPA4  */
 #define   PPS_EXTINT2R_EXTINT2_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_EXTINT2R) RPA8  */
-#define   PPS_EXTINT2R_EXTINT2_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_EXTINT2R) RPA12  */
 #define   PPS_EXTINT2R_EXTINT2_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_EXTINT2R) RPB1  */
 #define   PPS_EXTINT2R_EXTINT2_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_EXTINT2R) RPB5  */
 #define   PPS_EXTINT2R_EXTINT2_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_EXTINT2R) RPB9  */
@@ -141,7 +136,6 @@
 #define PPS_EXTINT2R_EXTINT2_RPA0             (PPS_EXTINT2R_EXTINT2_RPA0_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPA0 Position */
 #define PPS_EXTINT2R_EXTINT2_RPA4             (PPS_EXTINT2R_EXTINT2_RPA4_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPA4 Position */
 #define PPS_EXTINT2R_EXTINT2_RPA8             (PPS_EXTINT2R_EXTINT2_RPA8_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPA8 Position */
-#define PPS_EXTINT2R_EXTINT2_RPA12            (PPS_EXTINT2R_EXTINT2_RPA12_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPA12 Position */
 #define PPS_EXTINT2R_EXTINT2_RPB1             (PPS_EXTINT2R_EXTINT2_RPB1_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPB1 Position */
 #define PPS_EXTINT2R_EXTINT2_RPB5             (PPS_EXTINT2R_EXTINT2_RPB5_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPB5 Position */
 #define PPS_EXTINT2R_EXTINT2_RPB9             (PPS_EXTINT2R_EXTINT2_RPB9_Val << PPS_EXTINT2R_EXTINT2_Pos) /* (PPS_EXTINT2R) RPB9 Position */
@@ -241,14 +235,12 @@
 #define   PPS_SCOM0P0R_SCOM0P0_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_SCOM0P0R) RPA0  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_SCOM0P0R) RPA4  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_SCOM0P0R) RPA8  */
-#define   PPS_SCOM0P0R_SCOM0P0_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_SCOM0P0R) RPA12  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_SCOM0P0R) RPB1  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_SCOM0P0R) RPB5  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_SCOM0P0R) RPB9  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_SCOM0P0R) RPB13  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_SCOM0P0R) RPA3  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_SCOM0P0R) RPA7  */
-#define   PPS_SCOM0P0R_SCOM0P0_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_SCOM0P0R) RPA11  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_SCOM0P0R) RPB0  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_SCOM0P0R) RPB4  */
 #define   PPS_SCOM0P0R_SCOM0P0_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_SCOM0P0R) RPB8  */
@@ -257,14 +249,12 @@
 #define PPS_SCOM0P0R_SCOM0P0_RPA0             (PPS_SCOM0P0R_SCOM0P0_RPA0_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA0 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPA4             (PPS_SCOM0P0R_SCOM0P0_RPA4_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA4 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPA8             (PPS_SCOM0P0R_SCOM0P0_RPA8_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA8 Position */
-#define PPS_SCOM0P0R_SCOM0P0_RPA12            (PPS_SCOM0P0R_SCOM0P0_RPA12_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA12 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB1             (PPS_SCOM0P0R_SCOM0P0_RPB1_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB1 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB5             (PPS_SCOM0P0R_SCOM0P0_RPB5_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB5 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB9             (PPS_SCOM0P0R_SCOM0P0_RPB9_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB9 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB13            (PPS_SCOM0P0R_SCOM0P0_RPB13_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB13 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPA3             (PPS_SCOM0P0R_SCOM0P0_RPA3_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA3 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPA7             (PPS_SCOM0P0R_SCOM0P0_RPA7_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA7 Position */
-#define PPS_SCOM0P0R_SCOM0P0_RPA11            (PPS_SCOM0P0R_SCOM0P0_RPA11_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPA11 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB0             (PPS_SCOM0P0R_SCOM0P0_RPB0_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB0 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB4             (PPS_SCOM0P0R_SCOM0P0_RPB4_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB4 Position */
 #define PPS_SCOM0P0R_SCOM0P0_RPB8             (PPS_SCOM0P0R_SCOM0P0_RPB8_Val << PPS_SCOM0P0R_SCOM0P0_Pos) /* (PPS_SCOM0P0R) RPB8 Position */
@@ -289,7 +279,6 @@
 #define   PPS_SCOM0P1R_SCOM0P1_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_SCOM0P1R) RPA0  */
 #define   PPS_SCOM0P1R_SCOM0P1_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_SCOM0P1R) RPA4  */
 #define   PPS_SCOM0P1R_SCOM0P1_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_SCOM0P1R) RPA8  */
-#define   PPS_SCOM0P1R_SCOM0P1_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_SCOM0P1R) RPA12  */
 #define   PPS_SCOM0P1R_SCOM0P1_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_SCOM0P1R) RPB1  */
 #define   PPS_SCOM0P1R_SCOM0P1_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_SCOM0P1R) RPB5  */
 #define   PPS_SCOM0P1R_SCOM0P1_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_SCOM0P1R) RPB9  */
@@ -305,7 +294,6 @@
 #define PPS_SCOM0P1R_SCOM0P1_RPA0             (PPS_SCOM0P1R_SCOM0P1_RPA0_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPA0 Position */
 #define PPS_SCOM0P1R_SCOM0P1_RPA4             (PPS_SCOM0P1R_SCOM0P1_RPA4_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPA4 Position */
 #define PPS_SCOM0P1R_SCOM0P1_RPA8             (PPS_SCOM0P1R_SCOM0P1_RPA8_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPA8 Position */
-#define PPS_SCOM0P1R_SCOM0P1_RPA12            (PPS_SCOM0P1R_SCOM0P1_RPA12_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPA12 Position */
 #define PPS_SCOM0P1R_SCOM0P1_RPB1             (PPS_SCOM0P1R_SCOM0P1_RPB1_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPB1 Position */
 #define PPS_SCOM0P1R_SCOM0P1_RPB5             (PPS_SCOM0P1R_SCOM0P1_RPB5_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPB5 Position */
 #define PPS_SCOM0P1R_SCOM0P1_RPB9             (PPS_SCOM0P1R_SCOM0P1_RPB9_Val << PPS_SCOM0P1R_SCOM0P1_Pos) /* (PPS_SCOM0P1R) RPB9 Position */
@@ -364,7 +352,6 @@
 #define   PPS_SCOM0P3R_SCOM0P3_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_SCOM0P3R) RPA9  */
 #define   PPS_SCOM0P3R_SCOM0P3_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_SCOM0P3R) RPA3  */
 #define   PPS_SCOM0P3R_SCOM0P3_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_SCOM0P3R) RPA7  */
-#define   PPS_SCOM0P3R_SCOM0P3_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_SCOM0P3R) RPA11  */
 #define   PPS_SCOM0P3R_SCOM0P3_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_SCOM0P3R) RPB0  */
 #define   PPS_SCOM0P3R_SCOM0P3_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_SCOM0P3R) RPB4  */
 #define   PPS_SCOM0P3R_SCOM0P3_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_SCOM0P3R) RPB8  */
@@ -380,7 +367,6 @@
 #define PPS_SCOM0P3R_SCOM0P3_RPA9             (PPS_SCOM0P3R_SCOM0P3_RPA9_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPA9 Position */
 #define PPS_SCOM0P3R_SCOM0P3_RPA3             (PPS_SCOM0P3R_SCOM0P3_RPA3_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPA3 Position */
 #define PPS_SCOM0P3R_SCOM0P3_RPA7             (PPS_SCOM0P3R_SCOM0P3_RPA7_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPA7 Position */
-#define PPS_SCOM0P3R_SCOM0P3_RPA11            (PPS_SCOM0P3R_SCOM0P3_RPA11_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPA11 Position */
 #define PPS_SCOM0P3R_SCOM0P3_RPB0             (PPS_SCOM0P3R_SCOM0P3_RPB0_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPB0 Position */
 #define PPS_SCOM0P3R_SCOM0P3_RPB4             (PPS_SCOM0P3R_SCOM0P3_RPB4_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPB4 Position */
 #define PPS_SCOM0P3R_SCOM0P3_RPB8             (PPS_SCOM0P3R_SCOM0P3_RPB8_Val << PPS_SCOM0P3R_SCOM0P3_Pos) /* (PPS_SCOM0P3R) RPB8 Position */
@@ -412,7 +398,6 @@
 #define   PPS_SCOM1P0R_SCOM1P0_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_SCOM1P0R) RPA0  */
 #define   PPS_SCOM1P0R_SCOM1P0_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_SCOM1P0R) RPA4  */
 #define   PPS_SCOM1P0R_SCOM1P0_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_SCOM1P0R) RPA8  */
-#define   PPS_SCOM1P0R_SCOM1P0_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_SCOM1P0R) RPA12  */
 #define   PPS_SCOM1P0R_SCOM1P0_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_SCOM1P0R) RPB1  */
 #define   PPS_SCOM1P0R_SCOM1P0_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_SCOM1P0R) RPB5  */
 #define   PPS_SCOM1P0R_SCOM1P0_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_SCOM1P0R) RPB9  */
@@ -428,7 +413,6 @@
 #define PPS_SCOM1P0R_SCOM1P0_RPA0             (PPS_SCOM1P0R_SCOM1P0_RPA0_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPA0 Position */
 #define PPS_SCOM1P0R_SCOM1P0_RPA4             (PPS_SCOM1P0R_SCOM1P0_RPA4_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPA4 Position */
 #define PPS_SCOM1P0R_SCOM1P0_RPA8             (PPS_SCOM1P0R_SCOM1P0_RPA8_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPA8 Position */
-#define PPS_SCOM1P0R_SCOM1P0_RPA12            (PPS_SCOM1P0R_SCOM1P0_RPA12_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPA12 Position */
 #define PPS_SCOM1P0R_SCOM1P0_RPB1             (PPS_SCOM1P0R_SCOM1P0_RPB1_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPB1 Position */
 #define PPS_SCOM1P0R_SCOM1P0_RPB5             (PPS_SCOM1P0R_SCOM1P0_RPB5_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPB5 Position */
 #define PPS_SCOM1P0R_SCOM1P0_RPB9             (PPS_SCOM1P0R_SCOM1P0_RPB9_Val << PPS_SCOM1P0R_SCOM1P0_Pos) /* (PPS_SCOM1P0R) RPB9 Position */
@@ -487,7 +471,6 @@
 #define   PPS_SCOM1P2R_SCOM1P2_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_SCOM1P2R) RPA9  */
 #define   PPS_SCOM1P2R_SCOM1P2_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_SCOM1P2R) RPA3  */
 #define   PPS_SCOM1P2R_SCOM1P2_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_SCOM1P2R) RPA7  */
-#define   PPS_SCOM1P2R_SCOM1P2_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_SCOM1P2R) RPA11  */
 #define   PPS_SCOM1P2R_SCOM1P2_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_SCOM1P2R) RPB0  */
 #define   PPS_SCOM1P2R_SCOM1P2_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_SCOM1P2R) RPB4  */
 #define   PPS_SCOM1P2R_SCOM1P2_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_SCOM1P2R) RPB8  */
@@ -503,7 +486,6 @@
 #define PPS_SCOM1P2R_SCOM1P2_RPA9             (PPS_SCOM1P2R_SCOM1P2_RPA9_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPA9 Position */
 #define PPS_SCOM1P2R_SCOM1P2_RPA3             (PPS_SCOM1P2R_SCOM1P2_RPA3_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPA3 Position */
 #define PPS_SCOM1P2R_SCOM1P2_RPA7             (PPS_SCOM1P2R_SCOM1P2_RPA7_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPA7 Position */
-#define PPS_SCOM1P2R_SCOM1P2_RPA11            (PPS_SCOM1P2R_SCOM1P2_RPA11_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPA11 Position */
 #define PPS_SCOM1P2R_SCOM1P2_RPB0             (PPS_SCOM1P2R_SCOM1P2_RPB0_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPB0 Position */
 #define PPS_SCOM1P2R_SCOM1P2_RPB4             (PPS_SCOM1P2R_SCOM1P2_RPB4_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPB4 Position */
 #define PPS_SCOM1P2R_SCOM1P2_RPB8             (PPS_SCOM1P2R_SCOM1P2_RPB8_Val << PPS_SCOM1P2R_SCOM1P2_Pos) /* (PPS_SCOM1P2R) RPB8 Position */
@@ -528,14 +510,12 @@
 #define   PPS_SCOM1P3R_SCOM1P3_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_SCOM1P3R) RPA0  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_SCOM1P3R) RPA4  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_SCOM1P3R) RPA8  */
-#define   PPS_SCOM1P3R_SCOM1P3_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_SCOM1P3R) RPA12  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_SCOM1P3R) RPB1  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_SCOM1P3R) RPB5  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_SCOM1P3R) RPB9  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_SCOM1P3R) RPB13  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_SCOM1P3R) RPA3  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_SCOM1P3R) RPA7  */
-#define   PPS_SCOM1P3R_SCOM1P3_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_SCOM1P3R) RPA11  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_SCOM1P3R) RPB0  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_SCOM1P3R) RPB4  */
 #define   PPS_SCOM1P3R_SCOM1P3_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_SCOM1P3R) RPB8  */
@@ -544,14 +524,12 @@
 #define PPS_SCOM1P3R_SCOM1P3_RPA0             (PPS_SCOM1P3R_SCOM1P3_RPA0_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA0 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPA4             (PPS_SCOM1P3R_SCOM1P3_RPA4_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA4 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPA8             (PPS_SCOM1P3R_SCOM1P3_RPA8_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA8 Position */
-#define PPS_SCOM1P3R_SCOM1P3_RPA12            (PPS_SCOM1P3R_SCOM1P3_RPA12_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA12 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB1             (PPS_SCOM1P3R_SCOM1P3_RPB1_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB1 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB5             (PPS_SCOM1P3R_SCOM1P3_RPB5_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB5 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB9             (PPS_SCOM1P3R_SCOM1P3_RPB9_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB9 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB13            (PPS_SCOM1P3R_SCOM1P3_RPB13_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB13 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPA3             (PPS_SCOM1P3R_SCOM1P3_RPA3_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA3 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPA7             (PPS_SCOM1P3R_SCOM1P3_RPA7_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA7 Position */
-#define PPS_SCOM1P3R_SCOM1P3_RPA11            (PPS_SCOM1P3R_SCOM1P3_RPA11_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPA11 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB0             (PPS_SCOM1P3R_SCOM1P3_RPB0_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB0 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB4             (PPS_SCOM1P3R_SCOM1P3_RPB4_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB4 Position */
 #define PPS_SCOM1P3R_SCOM1P3_RPB8             (PPS_SCOM1P3R_SCOM1P3_RPB8_Val << PPS_SCOM1P3R_SCOM1P3_Pos) /* (PPS_SCOM1P3R) RPB8 Position */
@@ -610,7 +588,6 @@
 #define   PPS_SCOM2P1R_SCOM2P1_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_SCOM2P1R) RPA9  */
 #define   PPS_SCOM2P1R_SCOM2P1_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_SCOM2P1R) RPA3  */
 #define   PPS_SCOM2P1R_SCOM2P1_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_SCOM2P1R) RPA7  */
-#define   PPS_SCOM2P1R_SCOM2P1_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_SCOM2P1R) RPA11  */
 #define   PPS_SCOM2P1R_SCOM2P1_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_SCOM2P1R) RPB0  */
 #define   PPS_SCOM2P1R_SCOM2P1_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_SCOM2P1R) RPB4  */
 #define   PPS_SCOM2P1R_SCOM2P1_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_SCOM2P1R) RPB8  */
@@ -626,7 +603,6 @@
 #define PPS_SCOM2P1R_SCOM2P1_RPA9             (PPS_SCOM2P1R_SCOM2P1_RPA9_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPA9 Position */
 #define PPS_SCOM2P1R_SCOM2P1_RPA3             (PPS_SCOM2P1R_SCOM2P1_RPA3_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPA3 Position */
 #define PPS_SCOM2P1R_SCOM2P1_RPA7             (PPS_SCOM2P1R_SCOM2P1_RPA7_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPA7 Position */
-#define PPS_SCOM2P1R_SCOM2P1_RPA11            (PPS_SCOM2P1R_SCOM2P1_RPA11_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPA11 Position */
 #define PPS_SCOM2P1R_SCOM2P1_RPB0             (PPS_SCOM2P1R_SCOM2P1_RPB0_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPB0 Position */
 #define PPS_SCOM2P1R_SCOM2P1_RPB4             (PPS_SCOM2P1R_SCOM2P1_RPB4_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPB4 Position */
 #define PPS_SCOM2P1R_SCOM2P1_RPB8             (PPS_SCOM2P1R_SCOM2P1_RPB8_Val << PPS_SCOM2P1R_SCOM2P1_Pos) /* (PPS_SCOM2P1R) RPB8 Position */
@@ -651,14 +627,12 @@
 #define   PPS_SCOM2P2R_SCOM2P2_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_SCOM2P2R) RPA0  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_SCOM2P2R) RPA4  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_SCOM2P2R) RPA8  */
-#define   PPS_SCOM2P2R_SCOM2P2_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_SCOM2P2R) RPA12  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_SCOM2P2R) RPB1  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_SCOM2P2R) RPB5  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_SCOM2P2R) RPB9  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_SCOM2P2R) RPB13  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_SCOM2P2R) RPA3  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_SCOM2P2R) RPA7  */
-#define   PPS_SCOM2P2R_SCOM2P2_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_SCOM2P2R) RPA11  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_SCOM2P2R) RPB0  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_SCOM2P2R) RPB4  */
 #define   PPS_SCOM2P2R_SCOM2P2_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_SCOM2P2R) RPB8  */
@@ -667,14 +641,12 @@
 #define PPS_SCOM2P2R_SCOM2P2_RPA0             (PPS_SCOM2P2R_SCOM2P2_RPA0_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA0 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPA4             (PPS_SCOM2P2R_SCOM2P2_RPA4_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA4 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPA8             (PPS_SCOM2P2R_SCOM2P2_RPA8_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA8 Position */
-#define PPS_SCOM2P2R_SCOM2P2_RPA12            (PPS_SCOM2P2R_SCOM2P2_RPA12_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA12 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB1             (PPS_SCOM2P2R_SCOM2P2_RPB1_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB1 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB5             (PPS_SCOM2P2R_SCOM2P2_RPB5_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB5 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB9             (PPS_SCOM2P2R_SCOM2P2_RPB9_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB9 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB13            (PPS_SCOM2P2R_SCOM2P2_RPB13_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB13 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPA3             (PPS_SCOM2P2R_SCOM2P2_RPA3_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA3 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPA7             (PPS_SCOM2P2R_SCOM2P2_RPA7_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA7 Position */
-#define PPS_SCOM2P2R_SCOM2P2_RPA11            (PPS_SCOM2P2R_SCOM2P2_RPA11_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPA11 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB0             (PPS_SCOM2P2R_SCOM2P2_RPB0_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB0 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB4             (PPS_SCOM2P2R_SCOM2P2_RPB4_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB4 Position */
 #define PPS_SCOM2P2R_SCOM2P2_RPB8             (PPS_SCOM2P2R_SCOM2P2_RPB8_Val << PPS_SCOM2P2R_SCOM2P2_Pos) /* (PPS_SCOM2P2R) RPB8 Position */
@@ -699,7 +671,6 @@
 #define   PPS_SCOM2P3R_SCOM2P3_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_SCOM2P3R) RPA0  */
 #define   PPS_SCOM2P3R_SCOM2P3_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_SCOM2P3R) RPA4  */
 #define   PPS_SCOM2P3R_SCOM2P3_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_SCOM2P3R) RPA8  */
-#define   PPS_SCOM2P3R_SCOM2P3_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_SCOM2P3R) RPA12  */
 #define   PPS_SCOM2P3R_SCOM2P3_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_SCOM2P3R) RPB1  */
 #define   PPS_SCOM2P3R_SCOM2P3_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_SCOM2P3R) RPB5  */
 #define   PPS_SCOM2P3R_SCOM2P3_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_SCOM2P3R) RPB9  */
@@ -715,7 +686,6 @@
 #define PPS_SCOM2P3R_SCOM2P3_RPA0             (PPS_SCOM2P3R_SCOM2P3_RPA0_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPA0 Position */
 #define PPS_SCOM2P3R_SCOM2P3_RPA4             (PPS_SCOM2P3R_SCOM2P3_RPA4_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPA4 Position */
 #define PPS_SCOM2P3R_SCOM2P3_RPA8             (PPS_SCOM2P3R_SCOM2P3_RPA8_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPA8 Position */
-#define PPS_SCOM2P3R_SCOM2P3_RPA12            (PPS_SCOM2P3R_SCOM2P3_RPA12_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPA12 Position */
 #define PPS_SCOM2P3R_SCOM2P3_RPB1             (PPS_SCOM2P3R_SCOM2P3_RPB1_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPB1 Position */
 #define PPS_SCOM2P3R_SCOM2P3_RPB5             (PPS_SCOM2P3R_SCOM2P3_RPB5_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPB5 Position */
 #define PPS_SCOM2P3R_SCOM2P3_RPB9             (PPS_SCOM2P3R_SCOM2P3_RPB9_Val << PPS_SCOM2P3R_SCOM2P3_Pos) /* (PPS_SCOM2P3R) RPB9 Position */
@@ -733,7 +703,6 @@
 #define   PPS_SCOM3P0R_SCOM3P0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_SCOM3P0R) RPA9  */
 #define   PPS_SCOM3P0R_SCOM3P0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_SCOM3P0R) RPA3  */
 #define   PPS_SCOM3P0R_SCOM3P0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_SCOM3P0R) RPA7  */
-#define   PPS_SCOM3P0R_SCOM3P0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_SCOM3P0R) RPA11  */
 #define   PPS_SCOM3P0R_SCOM3P0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_SCOM3P0R) RPB0  */
 #define   PPS_SCOM3P0R_SCOM3P0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_SCOM3P0R) RPB4  */
 #define   PPS_SCOM3P0R_SCOM3P0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_SCOM3P0R) RPB8  */
@@ -749,7 +718,6 @@
 #define PPS_SCOM3P0R_SCOM3P0_RPA9             (PPS_SCOM3P0R_SCOM3P0_RPA9_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPA9 Position */
 #define PPS_SCOM3P0R_SCOM3P0_RPA3             (PPS_SCOM3P0R_SCOM3P0_RPA3_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPA3 Position */
 #define PPS_SCOM3P0R_SCOM3P0_RPA7             (PPS_SCOM3P0R_SCOM3P0_RPA7_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPA7 Position */
-#define PPS_SCOM3P0R_SCOM3P0_RPA11            (PPS_SCOM3P0R_SCOM3P0_RPA11_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPA11 Position */
 #define PPS_SCOM3P0R_SCOM3P0_RPB0             (PPS_SCOM3P0R_SCOM3P0_RPB0_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPB0 Position */
 #define PPS_SCOM3P0R_SCOM3P0_RPB4             (PPS_SCOM3P0R_SCOM3P0_RPB4_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPB4 Position */
 #define PPS_SCOM3P0R_SCOM3P0_RPB8             (PPS_SCOM3P0R_SCOM3P0_RPB8_Val << PPS_SCOM3P0R_SCOM3P0_Pos) /* (PPS_SCOM3P0R) RPB8 Position */
@@ -774,14 +742,12 @@
 #define   PPS_SCOM3P1R_SCOM3P1_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_SCOM3P1R) RPA0  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_SCOM3P1R) RPA4  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_SCOM3P1R) RPA8  */
-#define   PPS_SCOM3P1R_SCOM3P1_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_SCOM3P1R) RPA12  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_SCOM3P1R) RPB1  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_SCOM3P1R) RPB5  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_SCOM3P1R) RPB9  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_SCOM3P1R) RPB13  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_SCOM3P1R) RPA3  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_SCOM3P1R) RPA7  */
-#define   PPS_SCOM3P1R_SCOM3P1_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_SCOM3P1R) RPA11  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_SCOM3P1R) RPB0  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_SCOM3P1R) RPB4  */
 #define   PPS_SCOM3P1R_SCOM3P1_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_SCOM3P1R) RPB8  */
@@ -790,14 +756,12 @@
 #define PPS_SCOM3P1R_SCOM3P1_RPA0             (PPS_SCOM3P1R_SCOM3P1_RPA0_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA0 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPA4             (PPS_SCOM3P1R_SCOM3P1_RPA4_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA4 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPA8             (PPS_SCOM3P1R_SCOM3P1_RPA8_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA8 Position */
-#define PPS_SCOM3P1R_SCOM3P1_RPA12            (PPS_SCOM3P1R_SCOM3P1_RPA12_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA12 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB1             (PPS_SCOM3P1R_SCOM3P1_RPB1_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB1 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB5             (PPS_SCOM3P1R_SCOM3P1_RPB5_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB5 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB9             (PPS_SCOM3P1R_SCOM3P1_RPB9_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB9 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB13            (PPS_SCOM3P1R_SCOM3P1_RPB13_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB13 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPA3             (PPS_SCOM3P1R_SCOM3P1_RPA3_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA3 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPA7             (PPS_SCOM3P1R_SCOM3P1_RPA7_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA7 Position */
-#define PPS_SCOM3P1R_SCOM3P1_RPA11            (PPS_SCOM3P1R_SCOM3P1_RPA11_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPA11 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB0             (PPS_SCOM3P1R_SCOM3P1_RPB0_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB0 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB4             (PPS_SCOM3P1R_SCOM3P1_RPB4_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB4 Position */
 #define PPS_SCOM3P1R_SCOM3P1_RPB8             (PPS_SCOM3P1R_SCOM3P1_RPB8_Val << PPS_SCOM3P1R_SCOM3P1_Pos) /* (PPS_SCOM3P1R) RPB8 Position */
@@ -822,7 +786,6 @@
 #define   PPS_SCOM3P2R_SCOM3P2_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_SCOM3P2R) RPA0  */
 #define   PPS_SCOM3P2R_SCOM3P2_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_SCOM3P2R) RPA4  */
 #define   PPS_SCOM3P2R_SCOM3P2_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_SCOM3P2R) RPA8  */
-#define   PPS_SCOM3P2R_SCOM3P2_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_SCOM3P2R) RPA12  */
 #define   PPS_SCOM3P2R_SCOM3P2_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_SCOM3P2R) RPB1  */
 #define   PPS_SCOM3P2R_SCOM3P2_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_SCOM3P2R) RPB5  */
 #define   PPS_SCOM3P2R_SCOM3P2_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_SCOM3P2R) RPB9  */
@@ -838,7 +801,6 @@
 #define PPS_SCOM3P2R_SCOM3P2_RPA0             (PPS_SCOM3P2R_SCOM3P2_RPA0_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPA0 Position */
 #define PPS_SCOM3P2R_SCOM3P2_RPA4             (PPS_SCOM3P2R_SCOM3P2_RPA4_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPA4 Position */
 #define PPS_SCOM3P2R_SCOM3P2_RPA8             (PPS_SCOM3P2R_SCOM3P2_RPA8_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPA8 Position */
-#define PPS_SCOM3P2R_SCOM3P2_RPA12            (PPS_SCOM3P2R_SCOM3P2_RPA12_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPA12 Position */
 #define PPS_SCOM3P2R_SCOM3P2_RPB1             (PPS_SCOM3P2R_SCOM3P2_RPB1_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPB1 Position */
 #define PPS_SCOM3P2R_SCOM3P2_RPB5             (PPS_SCOM3P2R_SCOM3P2_RPB5_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPB5 Position */
 #define PPS_SCOM3P2R_SCOM3P2_RPB9             (PPS_SCOM3P2R_SCOM3P2_RPB9_Val << PPS_SCOM3P2R_SCOM3P2_Pos) /* (PPS_SCOM3P2R) RPB9 Position */
@@ -897,7 +859,6 @@
 #define   PPS_QSCKR_QSCK_RPA9_Val             _UINT32_(0xF)                                        /* (PPS_QSCKR) RPA9  */
 #define   PPS_QSCKR_QSCK_RPA3_Val             _UINT32_(0x1)                                        /* (PPS_QSCKR) RPA3  */
 #define   PPS_QSCKR_QSCK_RPA7_Val             _UINT32_(0x2)                                        /* (PPS_QSCKR) RPA7  */
-#define   PPS_QSCKR_QSCK_RPA11_Val            _UINT32_(0x3)                                        /* (PPS_QSCKR) RPA11  */
 #define   PPS_QSCKR_QSCK_RPB0_Val             _UINT32_(0x4)                                        /* (PPS_QSCKR) RPB0  */
 #define   PPS_QSCKR_QSCK_RPB4_Val             _UINT32_(0x5)                                        /* (PPS_QSCKR) RPB4  */
 #define   PPS_QSCKR_QSCK_RPB8_Val             _UINT32_(0x6)                                        /* (PPS_QSCKR) RPB8  */
@@ -913,7 +874,6 @@
 #define PPS_QSCKR_QSCK_RPA9                   (PPS_QSCKR_QSCK_RPA9_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPA9 Position */
 #define PPS_QSCKR_QSCK_RPA3                   (PPS_QSCKR_QSCK_RPA3_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPA3 Position */
 #define PPS_QSCKR_QSCK_RPA7                   (PPS_QSCKR_QSCK_RPA7_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPA7 Position */
-#define PPS_QSCKR_QSCK_RPA11                  (PPS_QSCKR_QSCK_RPA11_Val << PPS_QSCKR_QSCK_Pos)     /* (PPS_QSCKR) RPA11 Position */
 #define PPS_QSCKR_QSCK_RPB0                   (PPS_QSCKR_QSCK_RPB0_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPB0 Position */
 #define PPS_QSCKR_QSCK_RPB4                   (PPS_QSCKR_QSCK_RPB4_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPB4 Position */
 #define PPS_QSCKR_QSCK_RPB8                   (PPS_QSCKR_QSCK_RPB8_Val << PPS_QSCKR_QSCK_Pos)      /* (PPS_QSCKR) RPB8 Position */
@@ -979,7 +939,6 @@
 #define   PPS_QD1R_QD1_RPA9_Val               _UINT32_(0xF)                                        /* (PPS_QD1R) RPA9  */
 #define   PPS_QD1R_QD1_RPA3_Val               _UINT32_(0x1)                                        /* (PPS_QD1R) RPA3  */
 #define   PPS_QD1R_QD1_RPA7_Val               _UINT32_(0x2)                                        /* (PPS_QD1R) RPA7  */
-#define   PPS_QD1R_QD1_RPA11_Val              _UINT32_(0x3)                                        /* (PPS_QD1R) RPA11  */
 #define   PPS_QD1R_QD1_RPB0_Val               _UINT32_(0x4)                                        /* (PPS_QD1R) RPB0  */
 #define   PPS_QD1R_QD1_RPB4_Val               _UINT32_(0x5)                                        /* (PPS_QD1R) RPB4  */
 #define   PPS_QD1R_QD1_RPB8_Val               _UINT32_(0x6)                                        /* (PPS_QD1R) RPB8  */
@@ -995,7 +954,6 @@
 #define PPS_QD1R_QD1_RPA9                     (PPS_QD1R_QD1_RPA9_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPA9 Position */
 #define PPS_QD1R_QD1_RPA3                     (PPS_QD1R_QD1_RPA3_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPA3 Position */
 #define PPS_QD1R_QD1_RPA7                     (PPS_QD1R_QD1_RPA7_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPA7 Position */
-#define PPS_QD1R_QD1_RPA11                    (PPS_QD1R_QD1_RPA11_Val << PPS_QD1R_QD1_Pos)         /* (PPS_QD1R) RPA11 Position */
 #define PPS_QD1R_QD1_RPB0                     (PPS_QD1R_QD1_RPB0_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPB0 Position */
 #define PPS_QD1R_QD1_RPB4                     (PPS_QD1R_QD1_RPB4_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPB4 Position */
 #define PPS_QD1R_QD1_RPB8                     (PPS_QD1R_QD1_RPB8_Val << PPS_QD1R_QD1_Pos)          /* (PPS_QD1R) RPB8 Position */
@@ -1020,14 +978,12 @@
 #define   PPS_QD2R_QD2_RPA0_Val               _UINT32_(0xF)                                        /* (PPS_QD2R) RPA0  */
 #define   PPS_QD2R_QD2_RPA4_Val               _UINT32_(0x1)                                        /* (PPS_QD2R) RPA4  */
 #define   PPS_QD2R_QD2_RPA8_Val               _UINT32_(0x2)                                        /* (PPS_QD2R) RPA8  */
-#define   PPS_QD2R_QD2_RPA12_Val              _UINT32_(0x3)                                        /* (PPS_QD2R) RPA12  */
 #define   PPS_QD2R_QD2_RPB1_Val               _UINT32_(0x4)                                        /* (PPS_QD2R) RPB1  */
 #define   PPS_QD2R_QD2_RPB5_Val               _UINT32_(0x5)                                        /* (PPS_QD2R) RPB5  */
 #define   PPS_QD2R_QD2_RPB9_Val               _UINT32_(0x6)                                        /* (PPS_QD2R) RPB9  */
 #define   PPS_QD2R_QD2_RPB13_Val              _UINT32_(0x7)                                        /* (PPS_QD2R) RPB13  */
 #define   PPS_QD2R_QD2_RPA3_Val               _UINT32_(0x8)                                        /* (PPS_QD2R) RPA3  */
 #define   PPS_QD2R_QD2_RPA7_Val               _UINT32_(0x9)                                        /* (PPS_QD2R) RPA7  */
-#define   PPS_QD2R_QD2_RPA11_Val              _UINT32_(0xA)                                        /* (PPS_QD2R) RPA11  */
 #define   PPS_QD2R_QD2_RPB0_Val               _UINT32_(0xB)                                        /* (PPS_QD2R) RPB0  */
 #define   PPS_QD2R_QD2_RPB4_Val               _UINT32_(0xC)                                        /* (PPS_QD2R) RPB4  */
 #define   PPS_QD2R_QD2_RPB8_Val               _UINT32_(0xD)                                        /* (PPS_QD2R) RPB8  */
@@ -1036,14 +992,12 @@
 #define PPS_QD2R_QD2_RPA0                     (PPS_QD2R_QD2_RPA0_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPA0 Position */
 #define PPS_QD2R_QD2_RPA4                     (PPS_QD2R_QD2_RPA4_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPA4 Position */
 #define PPS_QD2R_QD2_RPA8                     (PPS_QD2R_QD2_RPA8_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPA8 Position */
-#define PPS_QD2R_QD2_RPA12                    (PPS_QD2R_QD2_RPA12_Val << PPS_QD2R_QD2_Pos)         /* (PPS_QD2R) RPA12 Position */
 #define PPS_QD2R_QD2_RPB1                     (PPS_QD2R_QD2_RPB1_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB1 Position */
 #define PPS_QD2R_QD2_RPB5                     (PPS_QD2R_QD2_RPB5_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB5 Position */
 #define PPS_QD2R_QD2_RPB9                     (PPS_QD2R_QD2_RPB9_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB9 Position */
 #define PPS_QD2R_QD2_RPB13                    (PPS_QD2R_QD2_RPB13_Val << PPS_QD2R_QD2_Pos)         /* (PPS_QD2R) RPB13 Position */
 #define PPS_QD2R_QD2_RPA3                     (PPS_QD2R_QD2_RPA3_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPA3 Position */
 #define PPS_QD2R_QD2_RPA7                     (PPS_QD2R_QD2_RPA7_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPA7 Position */
-#define PPS_QD2R_QD2_RPA11                    (PPS_QD2R_QD2_RPA11_Val << PPS_QD2R_QD2_Pos)         /* (PPS_QD2R) RPA11 Position */
 #define PPS_QD2R_QD2_RPB0                     (PPS_QD2R_QD2_RPB0_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB0 Position */
 #define PPS_QD2R_QD2_RPB4                     (PPS_QD2R_QD2_RPB4_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB4 Position */
 #define PPS_QD2R_QD2_RPB8                     (PPS_QD2R_QD2_RPB8_Val << PPS_QD2R_QD2_Pos)          /* (PPS_QD2R) RPB8 Position */
@@ -1068,7 +1022,6 @@
 #define   PPS_QD3R_QD3_RPA0_Val               _UINT32_(0x7)                                        /* (PPS_QD3R) RPA0  */
 #define   PPS_QD3R_QD3_RPA4_Val               _UINT32_(0x8)                                        /* (PPS_QD3R) RPA4  */
 #define   PPS_QD3R_QD3_RPA8_Val               _UINT32_(0x9)                                        /* (PPS_QD3R) RPA8  */
-#define   PPS_QD3R_QD3_RPA12_Val              _UINT32_(0xA)                                        /* (PPS_QD3R) RPA12  */
 #define   PPS_QD3R_QD3_RPB1_Val               _UINT32_(0xB)                                        /* (PPS_QD3R) RPB1  */
 #define   PPS_QD3R_QD3_RPB5_Val               _UINT32_(0xC)                                        /* (PPS_QD3R) RPB5  */
 #define   PPS_QD3R_QD3_RPB9_Val               _UINT32_(0xD)                                        /* (PPS_QD3R) RPB9  */
@@ -1084,7 +1037,6 @@
 #define PPS_QD3R_QD3_RPA0                     (PPS_QD3R_QD3_RPA0_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPA0 Position */
 #define PPS_QD3R_QD3_RPA4                     (PPS_QD3R_QD3_RPA4_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPA4 Position */
 #define PPS_QD3R_QD3_RPA8                     (PPS_QD3R_QD3_RPA8_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPA8 Position */
-#define PPS_QD3R_QD3_RPA12                    (PPS_QD3R_QD3_RPA12_Val << PPS_QD3R_QD3_Pos)         /* (PPS_QD3R) RPA12 Position */
 #define PPS_QD3R_QD3_RPB1                     (PPS_QD3R_QD3_RPB1_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPB1 Position */
 #define PPS_QD3R_QD3_RPB5                     (PPS_QD3R_QD3_RPB5_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPB5 Position */
 #define PPS_QD3R_QD3_RPB9                     (PPS_QD3R_QD3_RPB9_Val << PPS_QD3R_QD3_Pos)          /* (PPS_QD3R) RPB9 Position */
@@ -1102,7 +1054,6 @@
 #define   PPS_REFIR_REFI_RPA9_Val             _UINT32_(0xF)                                        /* (PPS_REFIR) RPA9  */
 #define   PPS_REFIR_REFI_RPA3_Val             _UINT32_(0x1)                                        /* (PPS_REFIR) RPA3  */
 #define   PPS_REFIR_REFI_RPA7_Val             _UINT32_(0x2)                                        /* (PPS_REFIR) RPA7  */
-#define   PPS_REFIR_REFI_RPA11_Val            _UINT32_(0x3)                                        /* (PPS_REFIR) RPA11  */
 #define   PPS_REFIR_REFI_RPB0_Val             _UINT32_(0x4)                                        /* (PPS_REFIR) RPB0  */
 #define   PPS_REFIR_REFI_RPB4_Val             _UINT32_(0x5)                                        /* (PPS_REFIR) RPB4  */
 #define   PPS_REFIR_REFI_RPB8_Val             _UINT32_(0x6)                                        /* (PPS_REFIR) RPB8  */
@@ -1118,7 +1069,6 @@
 #define PPS_REFIR_REFI_RPA9                   (PPS_REFIR_REFI_RPA9_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPA9 Position */
 #define PPS_REFIR_REFI_RPA3                   (PPS_REFIR_REFI_RPA3_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPA3 Position */
 #define PPS_REFIR_REFI_RPA7                   (PPS_REFIR_REFI_RPA7_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPA7 Position */
-#define PPS_REFIR_REFI_RPA11                  (PPS_REFIR_REFI_RPA11_Val << PPS_REFIR_REFI_Pos)     /* (PPS_REFIR) RPA11 Position */
 #define PPS_REFIR_REFI_RPB0                   (PPS_REFIR_REFI_RPB0_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPB0 Position */
 #define PPS_REFIR_REFI_RPB4                   (PPS_REFIR_REFI_RPB4_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPB4 Position */
 #define PPS_REFIR_REFI_RPB8                   (PPS_REFIR_REFI_RPB8_Val << PPS_REFIR_REFI_Pos)      /* (PPS_REFIR) RPB8 Position */
@@ -1143,7 +1093,6 @@
 #define   PPS_CCLIN0R_CCLIN0_RPA9_Val         _UINT32_(0xF)                                        /* (PPS_CCLIN0R) RPA9  */
 #define   PPS_CCLIN0R_CCLIN0_RPA3_Val         _UINT32_(0x1)                                        /* (PPS_CCLIN0R) RPA3  */
 #define   PPS_CCLIN0R_CCLIN0_RPA7_Val         _UINT32_(0x2)                                        /* (PPS_CCLIN0R) RPA7  */
-#define   PPS_CCLIN0R_CCLIN0_RPA11_Val        _UINT32_(0x3)                                        /* (PPS_CCLIN0R) RPA11  */
 #define   PPS_CCLIN0R_CCLIN0_RPB0_Val         _UINT32_(0x4)                                        /* (PPS_CCLIN0R) RPB0  */
 #define   PPS_CCLIN0R_CCLIN0_RPB4_Val         _UINT32_(0x5)                                        /* (PPS_CCLIN0R) RPB4  */
 #define   PPS_CCLIN0R_CCLIN0_RPB8_Val         _UINT32_(0x6)                                        /* (PPS_CCLIN0R) RPB8  */
@@ -1159,7 +1108,6 @@
 #define PPS_CCLIN0R_CCLIN0_RPA9               (PPS_CCLIN0R_CCLIN0_RPA9_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPA9 Position */
 #define PPS_CCLIN0R_CCLIN0_RPA3               (PPS_CCLIN0R_CCLIN0_RPA3_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPA3 Position */
 #define PPS_CCLIN0R_CCLIN0_RPA7               (PPS_CCLIN0R_CCLIN0_RPA7_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPA7 Position */
-#define PPS_CCLIN0R_CCLIN0_RPA11              (PPS_CCLIN0R_CCLIN0_RPA11_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPA11 Position */
 #define PPS_CCLIN0R_CCLIN0_RPB0               (PPS_CCLIN0R_CCLIN0_RPB0_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPB0 Position */
 #define PPS_CCLIN0R_CCLIN0_RPB4               (PPS_CCLIN0R_CCLIN0_RPB4_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPB4 Position */
 #define PPS_CCLIN0R_CCLIN0_RPB8               (PPS_CCLIN0R_CCLIN0_RPB8_Val << PPS_CCLIN0R_CCLIN0_Pos) /* (PPS_CCLIN0R) RPB8 Position */
@@ -1184,14 +1132,12 @@
 #define   PPS_CCLIN1R_CCLIN1_RPA0_Val         _UINT32_(0xF)                                        /* (PPS_CCLIN1R) RPA0  */
 #define   PPS_CCLIN1R_CCLIN1_RPA4_Val         _UINT32_(0x1)                                        /* (PPS_CCLIN1R) RPA4  */
 #define   PPS_CCLIN1R_CCLIN1_RPA8_Val         _UINT32_(0x2)                                        /* (PPS_CCLIN1R) RPA8  */
-#define   PPS_CCLIN1R_CCLIN1_RPA12_Val        _UINT32_(0x3)                                        /* (PPS_CCLIN1R) RPA12  */
 #define   PPS_CCLIN1R_CCLIN1_RPB1_Val         _UINT32_(0x4)                                        /* (PPS_CCLIN1R) RPB1  */
 #define   PPS_CCLIN1R_CCLIN1_RPB5_Val         _UINT32_(0x5)                                        /* (PPS_CCLIN1R) RPB5  */
 #define   PPS_CCLIN1R_CCLIN1_RPB9_Val         _UINT32_(0x6)                                        /* (PPS_CCLIN1R) RPB9  */
 #define   PPS_CCLIN1R_CCLIN1_RPB13_Val        _UINT32_(0x7)                                        /* (PPS_CCLIN1R) RPB13  */
 #define   PPS_CCLIN1R_CCLIN1_RPA3_Val         _UINT32_(0x8)                                        /* (PPS_CCLIN1R) RPA3  */
 #define   PPS_CCLIN1R_CCLIN1_RPA7_Val         _UINT32_(0x9)                                        /* (PPS_CCLIN1R) RPA7  */
-#define   PPS_CCLIN1R_CCLIN1_RPA11_Val        _UINT32_(0xA)                                        /* (PPS_CCLIN1R) RPA11  */
 #define   PPS_CCLIN1R_CCLIN1_RPB0_Val         _UINT32_(0xB)                                        /* (PPS_CCLIN1R) RPB0  */
 #define   PPS_CCLIN1R_CCLIN1_RPB4_Val         _UINT32_(0xC)                                        /* (PPS_CCLIN1R) RPB4  */
 #define   PPS_CCLIN1R_CCLIN1_RPB8_Val         _UINT32_(0xD)                                        /* (PPS_CCLIN1R) RPB8  */
@@ -1200,14 +1146,12 @@
 #define PPS_CCLIN1R_CCLIN1_RPA0               (PPS_CCLIN1R_CCLIN1_RPA0_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA0 Position */
 #define PPS_CCLIN1R_CCLIN1_RPA4               (PPS_CCLIN1R_CCLIN1_RPA4_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA4 Position */
 #define PPS_CCLIN1R_CCLIN1_RPA8               (PPS_CCLIN1R_CCLIN1_RPA8_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA8 Position */
-#define PPS_CCLIN1R_CCLIN1_RPA12              (PPS_CCLIN1R_CCLIN1_RPA12_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA12 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB1               (PPS_CCLIN1R_CCLIN1_RPB1_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB1 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB5               (PPS_CCLIN1R_CCLIN1_RPB5_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB5 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB9               (PPS_CCLIN1R_CCLIN1_RPB9_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB9 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB13              (PPS_CCLIN1R_CCLIN1_RPB13_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB13 Position */
 #define PPS_CCLIN1R_CCLIN1_RPA3               (PPS_CCLIN1R_CCLIN1_RPA3_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA3 Position */
 #define PPS_CCLIN1R_CCLIN1_RPA7               (PPS_CCLIN1R_CCLIN1_RPA7_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA7 Position */
-#define PPS_CCLIN1R_CCLIN1_RPA11              (PPS_CCLIN1R_CCLIN1_RPA11_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPA11 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB0               (PPS_CCLIN1R_CCLIN1_RPB0_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB0 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB4               (PPS_CCLIN1R_CCLIN1_RPB4_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB4 Position */
 #define PPS_CCLIN1R_CCLIN1_RPB8               (PPS_CCLIN1R_CCLIN1_RPB8_Val << PPS_CCLIN1R_CCLIN1_Pos) /* (PPS_CCLIN1R) RPB8 Position */
@@ -1232,7 +1176,6 @@
 #define   PPS_CCLIN2R_CCLIN2_RPA0_Val         _UINT32_(0x7)                                        /* (PPS_CCLIN2R) RPA0  */
 #define   PPS_CCLIN2R_CCLIN2_RPA4_Val         _UINT32_(0x8)                                        /* (PPS_CCLIN2R) RPA4  */
 #define   PPS_CCLIN2R_CCLIN2_RPA8_Val         _UINT32_(0x9)                                        /* (PPS_CCLIN2R) RPA8  */
-#define   PPS_CCLIN2R_CCLIN2_RPA12_Val        _UINT32_(0xA)                                        /* (PPS_CCLIN2R) RPA12  */
 #define   PPS_CCLIN2R_CCLIN2_RPB1_Val         _UINT32_(0xB)                                        /* (PPS_CCLIN2R) RPB1  */
 #define   PPS_CCLIN2R_CCLIN2_RPB5_Val         _UINT32_(0xC)                                        /* (PPS_CCLIN2R) RPB5  */
 #define   PPS_CCLIN2R_CCLIN2_RPB9_Val         _UINT32_(0xD)                                        /* (PPS_CCLIN2R) RPB9  */
@@ -1248,7 +1191,6 @@
 #define PPS_CCLIN2R_CCLIN2_RPA0               (PPS_CCLIN2R_CCLIN2_RPA0_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPA0 Position */
 #define PPS_CCLIN2R_CCLIN2_RPA4               (PPS_CCLIN2R_CCLIN2_RPA4_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPA4 Position */
 #define PPS_CCLIN2R_CCLIN2_RPA8               (PPS_CCLIN2R_CCLIN2_RPA8_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPA8 Position */
-#define PPS_CCLIN2R_CCLIN2_RPA12              (PPS_CCLIN2R_CCLIN2_RPA12_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPA12 Position */
 #define PPS_CCLIN2R_CCLIN2_RPB1               (PPS_CCLIN2R_CCLIN2_RPB1_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPB1 Position */
 #define PPS_CCLIN2R_CCLIN2_RPB5               (PPS_CCLIN2R_CCLIN2_RPB5_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPB5 Position */
 #define PPS_CCLIN2R_CCLIN2_RPB9               (PPS_CCLIN2R_CCLIN2_RPB9_Val << PPS_CCLIN2R_CCLIN2_Pos) /* (PPS_CCLIN2R) RPB9 Position */
@@ -1266,7 +1208,6 @@
 #define   PPS_CCLIN3R_CCLIN3_RPA9_Val         _UINT32_(0xF)                                        /* (PPS_CCLIN3R) RPA9  */
 #define   PPS_CCLIN3R_CCLIN3_RPA3_Val         _UINT32_(0x1)                                        /* (PPS_CCLIN3R) RPA3  */
 #define   PPS_CCLIN3R_CCLIN3_RPA7_Val         _UINT32_(0x2)                                        /* (PPS_CCLIN3R) RPA7  */
-#define   PPS_CCLIN3R_CCLIN3_RPA11_Val        _UINT32_(0x3)                                        /* (PPS_CCLIN3R) RPA11  */
 #define   PPS_CCLIN3R_CCLIN3_RPB0_Val         _UINT32_(0x4)                                        /* (PPS_CCLIN3R) RPB0  */
 #define   PPS_CCLIN3R_CCLIN3_RPB4_Val         _UINT32_(0x5)                                        /* (PPS_CCLIN3R) RPB4  */
 #define   PPS_CCLIN3R_CCLIN3_RPB8_Val         _UINT32_(0x6)                                        /* (PPS_CCLIN3R) RPB8  */
@@ -1282,7 +1223,6 @@
 #define PPS_CCLIN3R_CCLIN3_RPA9               (PPS_CCLIN3R_CCLIN3_RPA9_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPA9 Position */
 #define PPS_CCLIN3R_CCLIN3_RPA3               (PPS_CCLIN3R_CCLIN3_RPA3_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPA3 Position */
 #define PPS_CCLIN3R_CCLIN3_RPA7               (PPS_CCLIN3R_CCLIN3_RPA7_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPA7 Position */
-#define PPS_CCLIN3R_CCLIN3_RPA11              (PPS_CCLIN3R_CCLIN3_RPA11_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPA11 Position */
 #define PPS_CCLIN3R_CCLIN3_RPB0               (PPS_CCLIN3R_CCLIN3_RPB0_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPB0 Position */
 #define PPS_CCLIN3R_CCLIN3_RPB4               (PPS_CCLIN3R_CCLIN3_RPB4_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPB4 Position */
 #define PPS_CCLIN3R_CCLIN3_RPB8               (PPS_CCLIN3R_CCLIN3_RPB8_Val << PPS_CCLIN3R_CCLIN3_Pos) /* (PPS_CCLIN3R) RPB8 Position */
@@ -1307,14 +1247,12 @@
 #define   PPS_CCLIN4R_CCLIN4_RPA0_Val         _UINT32_(0xF)                                        /* (PPS_CCLIN4R) RPA0  */
 #define   PPS_CCLIN4R_CCLIN4_RPA4_Val         _UINT32_(0x1)                                        /* (PPS_CCLIN4R) RPA4  */
 #define   PPS_CCLIN4R_CCLIN4_RPA8_Val         _UINT32_(0x2)                                        /* (PPS_CCLIN4R) RPA8  */
-#define   PPS_CCLIN4R_CCLIN4_RPA12_Val        _UINT32_(0x3)                                        /* (PPS_CCLIN4R) RPA12  */
 #define   PPS_CCLIN4R_CCLIN4_RPB1_Val         _UINT32_(0x4)                                        /* (PPS_CCLIN4R) RPB1  */
 #define   PPS_CCLIN4R_CCLIN4_RPB5_Val         _UINT32_(0x5)                                        /* (PPS_CCLIN4R) RPB5  */
 #define   PPS_CCLIN4R_CCLIN4_RPB9_Val         _UINT32_(0x6)                                        /* (PPS_CCLIN4R) RPB9  */
 #define   PPS_CCLIN4R_CCLIN4_RPB13_Val        _UINT32_(0x7)                                        /* (PPS_CCLIN4R) RPB13  */
 #define   PPS_CCLIN4R_CCLIN4_RPA3_Val         _UINT32_(0x8)                                        /* (PPS_CCLIN4R) RPA3  */
 #define   PPS_CCLIN4R_CCLIN4_RPA7_Val         _UINT32_(0x9)                                        /* (PPS_CCLIN4R) RPA7  */
-#define   PPS_CCLIN4R_CCLIN4_RPA11_Val        _UINT32_(0xA)                                        /* (PPS_CCLIN4R) RPA11  */
 #define   PPS_CCLIN4R_CCLIN4_RPB0_Val         _UINT32_(0xB)                                        /* (PPS_CCLIN4R) RPB0  */
 #define   PPS_CCLIN4R_CCLIN4_RPB4_Val         _UINT32_(0xC)                                        /* (PPS_CCLIN4R) RPB4  */
 #define   PPS_CCLIN4R_CCLIN4_RPB8_Val         _UINT32_(0xD)                                        /* (PPS_CCLIN4R) RPB8  */
@@ -1323,14 +1261,12 @@
 #define PPS_CCLIN4R_CCLIN4_RPA0               (PPS_CCLIN4R_CCLIN4_RPA0_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA0 Position */
 #define PPS_CCLIN4R_CCLIN4_RPA4               (PPS_CCLIN4R_CCLIN4_RPA4_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA4 Position */
 #define PPS_CCLIN4R_CCLIN4_RPA8               (PPS_CCLIN4R_CCLIN4_RPA8_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA8 Position */
-#define PPS_CCLIN4R_CCLIN4_RPA12              (PPS_CCLIN4R_CCLIN4_RPA12_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA12 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB1               (PPS_CCLIN4R_CCLIN4_RPB1_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB1 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB5               (PPS_CCLIN4R_CCLIN4_RPB5_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB5 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB9               (PPS_CCLIN4R_CCLIN4_RPB9_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB9 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB13              (PPS_CCLIN4R_CCLIN4_RPB13_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB13 Position */
 #define PPS_CCLIN4R_CCLIN4_RPA3               (PPS_CCLIN4R_CCLIN4_RPA3_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA3 Position */
 #define PPS_CCLIN4R_CCLIN4_RPA7               (PPS_CCLIN4R_CCLIN4_RPA7_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA7 Position */
-#define PPS_CCLIN4R_CCLIN4_RPA11              (PPS_CCLIN4R_CCLIN4_RPA11_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPA11 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB0               (PPS_CCLIN4R_CCLIN4_RPB0_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB0 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB4               (PPS_CCLIN4R_CCLIN4_RPB4_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB4 Position */
 #define PPS_CCLIN4R_CCLIN4_RPB8               (PPS_CCLIN4R_CCLIN4_RPB8_Val << PPS_CCLIN4R_CCLIN4_Pos) /* (PPS_CCLIN4R) RPB8 Position */
@@ -1355,7 +1291,6 @@
 #define   PPS_CCLIN5R_CCLIN5_RPA0_Val         _UINT32_(0x7)                                        /* (PPS_CCLIN5R) RPA0  */
 #define   PPS_CCLIN5R_CCLIN5_RPA4_Val         _UINT32_(0x8)                                        /* (PPS_CCLIN5R) RPA4  */
 #define   PPS_CCLIN5R_CCLIN5_RPA8_Val         _UINT32_(0x9)                                        /* (PPS_CCLIN5R) RPA8  */
-#define   PPS_CCLIN5R_CCLIN5_RPA12_Val        _UINT32_(0xA)                                        /* (PPS_CCLIN5R) RPA12  */
 #define   PPS_CCLIN5R_CCLIN5_RPB1_Val         _UINT32_(0xB)                                        /* (PPS_CCLIN5R) RPB1  */
 #define   PPS_CCLIN5R_CCLIN5_RPB5_Val         _UINT32_(0xC)                                        /* (PPS_CCLIN5R) RPB5  */
 #define   PPS_CCLIN5R_CCLIN5_RPB9_Val         _UINT32_(0xD)                                        /* (PPS_CCLIN5R) RPB9  */
@@ -1371,7 +1306,6 @@
 #define PPS_CCLIN5R_CCLIN5_RPA0               (PPS_CCLIN5R_CCLIN5_RPA0_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPA0 Position */
 #define PPS_CCLIN5R_CCLIN5_RPA4               (PPS_CCLIN5R_CCLIN5_RPA4_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPA4 Position */
 #define PPS_CCLIN5R_CCLIN5_RPA8               (PPS_CCLIN5R_CCLIN5_RPA8_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPA8 Position */
-#define PPS_CCLIN5R_CCLIN5_RPA12              (PPS_CCLIN5R_CCLIN5_RPA12_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPA12 Position */
 #define PPS_CCLIN5R_CCLIN5_RPB1               (PPS_CCLIN5R_CCLIN5_RPB1_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPB1 Position */
 #define PPS_CCLIN5R_CCLIN5_RPB5               (PPS_CCLIN5R_CCLIN5_RPB5_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPB5 Position */
 #define PPS_CCLIN5R_CCLIN5_RPB9               (PPS_CCLIN5R_CCLIN5_RPB9_Val << PPS_CCLIN5R_CCLIN5_Pos) /* (PPS_CCLIN5R) RPB9 Position */
@@ -1389,7 +1323,6 @@
 #define   PPS_TC0WO0G1R_TC0WO0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_TC0WO0G1R) RPA9  */
 #define   PPS_TC0WO0G1R_TC0WO0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_TC0WO0G1R) RPA3  */
 #define   PPS_TC0WO0G1R_TC0WO0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_TC0WO0G1R) RPA7  */
-#define   PPS_TC0WO0G1R_TC0WO0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_TC0WO0G1R) RPA11  */
 #define   PPS_TC0WO0G1R_TC0WO0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_TC0WO0G1R) RPB0  */
 #define   PPS_TC0WO0G1R_TC0WO0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_TC0WO0G1R) RPB4  */
 #define   PPS_TC0WO0G1R_TC0WO0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_TC0WO0G1R) RPB8  */
@@ -1405,7 +1338,6 @@
 #define PPS_TC0WO0G1R_TC0WO0_RPA9             (PPS_TC0WO0G1R_TC0WO0_RPA9_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPA9 Position */
 #define PPS_TC0WO0G1R_TC0WO0_RPA3             (PPS_TC0WO0G1R_TC0WO0_RPA3_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPA3 Position */
 #define PPS_TC0WO0G1R_TC0WO0_RPA7             (PPS_TC0WO0G1R_TC0WO0_RPA7_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPA7 Position */
-#define PPS_TC0WO0G1R_TC0WO0_RPA11            (PPS_TC0WO0G1R_TC0WO0_RPA11_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPA11 Position */
 #define PPS_TC0WO0G1R_TC0WO0_RPB0             (PPS_TC0WO0G1R_TC0WO0_RPB0_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPB0 Position */
 #define PPS_TC0WO0G1R_TC0WO0_RPB4             (PPS_TC0WO0G1R_TC0WO0_RPB4_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPB4 Position */
 #define PPS_TC0WO0G1R_TC0WO0_RPB8             (PPS_TC0WO0G1R_TC0WO0_RPB8_Val << PPS_TC0WO0G1R_TC0WO0_Pos) /* (PPS_TC0WO0G1R) RPB8 Position */
@@ -1430,14 +1362,12 @@
 #define   PPS_TC0WO0G2R_TC0WO0_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_TC0WO0G2R) RPA0  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_TC0WO0G2R) RPA4  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_TC0WO0G2R) RPA8  */
-#define   PPS_TC0WO0G2R_TC0WO0_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_TC0WO0G2R) RPA12  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_TC0WO0G2R) RPB1  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_TC0WO0G2R) RPB5  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_TC0WO0G2R) RPB9  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_TC0WO0G2R) RPB13  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_TC0WO0G2R) RPA3  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_TC0WO0G2R) RPA7  */
-#define   PPS_TC0WO0G2R_TC0WO0_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_TC0WO0G2R) RPA11  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_TC0WO0G2R) RPB0  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_TC0WO0G2R) RPB4  */
 #define   PPS_TC0WO0G2R_TC0WO0_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_TC0WO0G2R) RPB8  */
@@ -1446,14 +1376,12 @@
 #define PPS_TC0WO0G2R_TC0WO0_RPA0             (PPS_TC0WO0G2R_TC0WO0_RPA0_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA0 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPA4             (PPS_TC0WO0G2R_TC0WO0_RPA4_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA4 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPA8             (PPS_TC0WO0G2R_TC0WO0_RPA8_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA8 Position */
-#define PPS_TC0WO0G2R_TC0WO0_RPA12            (PPS_TC0WO0G2R_TC0WO0_RPA12_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA12 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB1             (PPS_TC0WO0G2R_TC0WO0_RPB1_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB1 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB5             (PPS_TC0WO0G2R_TC0WO0_RPB5_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB5 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB9             (PPS_TC0WO0G2R_TC0WO0_RPB9_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB9 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB13            (PPS_TC0WO0G2R_TC0WO0_RPB13_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB13 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPA3             (PPS_TC0WO0G2R_TC0WO0_RPA3_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA3 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPA7             (PPS_TC0WO0G2R_TC0WO0_RPA7_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA7 Position */
-#define PPS_TC0WO0G2R_TC0WO0_RPA11            (PPS_TC0WO0G2R_TC0WO0_RPA11_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPA11 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB0             (PPS_TC0WO0G2R_TC0WO0_RPB0_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB0 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB4             (PPS_TC0WO0G2R_TC0WO0_RPB4_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB4 Position */
 #define PPS_TC0WO0G2R_TC0WO0_RPB8             (PPS_TC0WO0G2R_TC0WO0_RPB8_Val << PPS_TC0WO0G2R_TC0WO0_Pos) /* (PPS_TC0WO0G2R) RPB8 Position */
@@ -1478,7 +1406,6 @@
 #define   PPS_TC0WO1G3R_TC0WO1_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_TC0WO1G3R) RPA0  */
 #define   PPS_TC0WO1G3R_TC0WO1_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_TC0WO1G3R) RPA4  */
 #define   PPS_TC0WO1G3R_TC0WO1_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_TC0WO1G3R) RPA8  */
-#define   PPS_TC0WO1G3R_TC0WO1_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_TC0WO1G3R) RPA12  */
 #define   PPS_TC0WO1G3R_TC0WO1_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_TC0WO1G3R) RPB1  */
 #define   PPS_TC0WO1G3R_TC0WO1_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_TC0WO1G3R) RPB5  */
 #define   PPS_TC0WO1G3R_TC0WO1_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_TC0WO1G3R) RPB9  */
@@ -1494,7 +1421,6 @@
 #define PPS_TC0WO1G3R_TC0WO1_RPA0             (PPS_TC0WO1G3R_TC0WO1_RPA0_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPA0 Position */
 #define PPS_TC0WO1G3R_TC0WO1_RPA4             (PPS_TC0WO1G3R_TC0WO1_RPA4_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPA4 Position */
 #define PPS_TC0WO1G3R_TC0WO1_RPA8             (PPS_TC0WO1G3R_TC0WO1_RPA8_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPA8 Position */
-#define PPS_TC0WO1G3R_TC0WO1_RPA12            (PPS_TC0WO1G3R_TC0WO1_RPA12_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPA12 Position */
 #define PPS_TC0WO1G3R_TC0WO1_RPB1             (PPS_TC0WO1G3R_TC0WO1_RPB1_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPB1 Position */
 #define PPS_TC0WO1G3R_TC0WO1_RPB5             (PPS_TC0WO1G3R_TC0WO1_RPB5_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPB5 Position */
 #define PPS_TC0WO1G3R_TC0WO1_RPB9             (PPS_TC0WO1G3R_TC0WO1_RPB9_Val << PPS_TC0WO1G3R_TC0WO1_Pos) /* (PPS_TC0WO1G3R) RPB9 Position */
@@ -1553,7 +1479,6 @@
 #define   PPS_TC1WO0G1R_TC1WO0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_TC1WO0G1R) RPA9  */
 #define   PPS_TC1WO0G1R_TC1WO0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_TC1WO0G1R) RPA3  */
 #define   PPS_TC1WO0G1R_TC1WO0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_TC1WO0G1R) RPA7  */
-#define   PPS_TC1WO0G1R_TC1WO0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_TC1WO0G1R) RPA11  */
 #define   PPS_TC1WO0G1R_TC1WO0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_TC1WO0G1R) RPB0  */
 #define   PPS_TC1WO0G1R_TC1WO0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_TC1WO0G1R) RPB4  */
 #define   PPS_TC1WO0G1R_TC1WO0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_TC1WO0G1R) RPB8  */
@@ -1569,7 +1494,6 @@
 #define PPS_TC1WO0G1R_TC1WO0_RPA9             (PPS_TC1WO0G1R_TC1WO0_RPA9_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPA9 Position */
 #define PPS_TC1WO0G1R_TC1WO0_RPA3             (PPS_TC1WO0G1R_TC1WO0_RPA3_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPA3 Position */
 #define PPS_TC1WO0G1R_TC1WO0_RPA7             (PPS_TC1WO0G1R_TC1WO0_RPA7_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPA7 Position */
-#define PPS_TC1WO0G1R_TC1WO0_RPA11            (PPS_TC1WO0G1R_TC1WO0_RPA11_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPA11 Position */
 #define PPS_TC1WO0G1R_TC1WO0_RPB0             (PPS_TC1WO0G1R_TC1WO0_RPB0_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPB0 Position */
 #define PPS_TC1WO0G1R_TC1WO0_RPB4             (PPS_TC1WO0G1R_TC1WO0_RPB4_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPB4 Position */
 #define PPS_TC1WO0G1R_TC1WO0_RPB8             (PPS_TC1WO0G1R_TC1WO0_RPB8_Val << PPS_TC1WO0G1R_TC1WO0_Pos) /* (PPS_TC1WO0G1R) RPB8 Position */
@@ -1594,14 +1518,12 @@
 #define   PPS_TC1WO1G2R_TC1WO1_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_TC1WO1G2R) RPA0  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_TC1WO1G2R) RPA4  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_TC1WO1G2R) RPA8  */
-#define   PPS_TC1WO1G2R_TC1WO1_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_TC1WO1G2R) RPA12  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_TC1WO1G2R) RPB1  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_TC1WO1G2R) RPB5  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_TC1WO1G2R) RPB9  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_TC1WO1G2R) RPB13  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_TC1WO1G2R) RPA3  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_TC1WO1G2R) RPA7  */
-#define   PPS_TC1WO1G2R_TC1WO1_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_TC1WO1G2R) RPA11  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_TC1WO1G2R) RPB0  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_TC1WO1G2R) RPB4  */
 #define   PPS_TC1WO1G2R_TC1WO1_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_TC1WO1G2R) RPB8  */
@@ -1610,14 +1532,12 @@
 #define PPS_TC1WO1G2R_TC1WO1_RPA0             (PPS_TC1WO1G2R_TC1WO1_RPA0_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA0 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPA4             (PPS_TC1WO1G2R_TC1WO1_RPA4_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA4 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPA8             (PPS_TC1WO1G2R_TC1WO1_RPA8_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA8 Position */
-#define PPS_TC1WO1G2R_TC1WO1_RPA12            (PPS_TC1WO1G2R_TC1WO1_RPA12_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA12 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB1             (PPS_TC1WO1G2R_TC1WO1_RPB1_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB1 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB5             (PPS_TC1WO1G2R_TC1WO1_RPB5_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB5 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB9             (PPS_TC1WO1G2R_TC1WO1_RPB9_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB9 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB13            (PPS_TC1WO1G2R_TC1WO1_RPB13_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB13 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPA3             (PPS_TC1WO1G2R_TC1WO1_RPA3_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA3 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPA7             (PPS_TC1WO1G2R_TC1WO1_RPA7_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA7 Position */
-#define PPS_TC1WO1G2R_TC1WO1_RPA11            (PPS_TC1WO1G2R_TC1WO1_RPA11_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPA11 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB0             (PPS_TC1WO1G2R_TC1WO1_RPB0_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB0 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB4             (PPS_TC1WO1G2R_TC1WO1_RPB4_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB4 Position */
 #define PPS_TC1WO1G2R_TC1WO1_RPB8             (PPS_TC1WO1G2R_TC1WO1_RPB8_Val << PPS_TC1WO1G2R_TC1WO1_Pos) /* (PPS_TC1WO1G2R) RPB8 Position */
@@ -1635,7 +1555,6 @@
 #define   PPS_TC2WO0G1R_TC2WO0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_TC2WO0G1R) RPA9  */
 #define   PPS_TC2WO0G1R_TC2WO0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_TC2WO0G1R) RPA3  */
 #define   PPS_TC2WO0G1R_TC2WO0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_TC2WO0G1R) RPA7  */
-#define   PPS_TC2WO0G1R_TC2WO0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_TC2WO0G1R) RPA11  */
 #define   PPS_TC2WO0G1R_TC2WO0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_TC2WO0G1R) RPB0  */
 #define   PPS_TC2WO0G1R_TC2WO0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_TC2WO0G1R) RPB4  */
 #define   PPS_TC2WO0G1R_TC2WO0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_TC2WO0G1R) RPB8  */
@@ -1651,7 +1570,6 @@
 #define PPS_TC2WO0G1R_TC2WO0_RPA9             (PPS_TC2WO0G1R_TC2WO0_RPA9_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPA9 Position */
 #define PPS_TC2WO0G1R_TC2WO0_RPA3             (PPS_TC2WO0G1R_TC2WO0_RPA3_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPA3 Position */
 #define PPS_TC2WO0G1R_TC2WO0_RPA7             (PPS_TC2WO0G1R_TC2WO0_RPA7_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPA7 Position */
-#define PPS_TC2WO0G1R_TC2WO0_RPA11            (PPS_TC2WO0G1R_TC2WO0_RPA11_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPA11 Position */
 #define PPS_TC2WO0G1R_TC2WO0_RPB0             (PPS_TC2WO0G1R_TC2WO0_RPB0_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPB0 Position */
 #define PPS_TC2WO0G1R_TC2WO0_RPB4             (PPS_TC2WO0G1R_TC2WO0_RPB4_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPB4 Position */
 #define PPS_TC2WO0G1R_TC2WO0_RPB8             (PPS_TC2WO0G1R_TC2WO0_RPB8_Val << PPS_TC2WO0G1R_TC2WO0_Pos) /* (PPS_TC2WO0G1R) RPB8 Position */
@@ -1683,7 +1601,6 @@
 #define   PPS_TC2WO0G3R_TC2WO0_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_TC2WO0G3R) RPA0  */
 #define   PPS_TC2WO0G3R_TC2WO0_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_TC2WO0G3R) RPA4  */
 #define   PPS_TC2WO0G3R_TC2WO0_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_TC2WO0G3R) RPA8  */
-#define   PPS_TC2WO0G3R_TC2WO0_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_TC2WO0G3R) RPA12  */
 #define   PPS_TC2WO0G3R_TC2WO0_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_TC2WO0G3R) RPB1  */
 #define   PPS_TC2WO0G3R_TC2WO0_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_TC2WO0G3R) RPB5  */
 #define   PPS_TC2WO0G3R_TC2WO0_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_TC2WO0G3R) RPB9  */
@@ -1699,7 +1616,6 @@
 #define PPS_TC2WO0G3R_TC2WO0_RPA0             (PPS_TC2WO0G3R_TC2WO0_RPA0_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPA0 Position */
 #define PPS_TC2WO0G3R_TC2WO0_RPA4             (PPS_TC2WO0G3R_TC2WO0_RPA4_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPA4 Position */
 #define PPS_TC2WO0G3R_TC2WO0_RPA8             (PPS_TC2WO0G3R_TC2WO0_RPA8_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPA8 Position */
-#define PPS_TC2WO0G3R_TC2WO0_RPA12            (PPS_TC2WO0G3R_TC2WO0_RPA12_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPA12 Position */
 #define PPS_TC2WO0G3R_TC2WO0_RPB1             (PPS_TC2WO0G3R_TC2WO0_RPB1_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPB1 Position */
 #define PPS_TC2WO0G3R_TC2WO0_RPB5             (PPS_TC2WO0G3R_TC2WO0_RPB5_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPB5 Position */
 #define PPS_TC2WO0G3R_TC2WO0_RPB9             (PPS_TC2WO0G3R_TC2WO0_RPB9_Val << PPS_TC2WO0G3R_TC2WO0_Pos) /* (PPS_TC2WO0G3R) RPB9 Position */
@@ -1717,14 +1633,12 @@
 #define   PPS_TC2WO1G2R_TC2WO1_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_TC2WO1G2R) RPA0  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_TC2WO1G2R) RPA4  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_TC2WO1G2R) RPA8  */
-#define   PPS_TC2WO1G2R_TC2WO1_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_TC2WO1G2R) RPA12  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_TC2WO1G2R) RPB1  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_TC2WO1G2R) RPB5  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_TC2WO1G2R) RPB9  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_TC2WO1G2R) RPB13  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_TC2WO1G2R) RPA3  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_TC2WO1G2R) RPA7  */
-#define   PPS_TC2WO1G2R_TC2WO1_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_TC2WO1G2R) RPA11  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_TC2WO1G2R) RPB0  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_TC2WO1G2R) RPB4  */
 #define   PPS_TC2WO1G2R_TC2WO1_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_TC2WO1G2R) RPB8  */
@@ -1733,14 +1647,12 @@
 #define PPS_TC2WO1G2R_TC2WO1_RPA0             (PPS_TC2WO1G2R_TC2WO1_RPA0_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA0 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPA4             (PPS_TC2WO1G2R_TC2WO1_RPA4_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA4 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPA8             (PPS_TC2WO1G2R_TC2WO1_RPA8_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA8 Position */
-#define PPS_TC2WO1G2R_TC2WO1_RPA12            (PPS_TC2WO1G2R_TC2WO1_RPA12_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA12 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB1             (PPS_TC2WO1G2R_TC2WO1_RPB1_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB1 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB5             (PPS_TC2WO1G2R_TC2WO1_RPB5_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB5 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB9             (PPS_TC2WO1G2R_TC2WO1_RPB9_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB9 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB13            (PPS_TC2WO1G2R_TC2WO1_RPB13_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB13 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPA3             (PPS_TC2WO1G2R_TC2WO1_RPA3_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA3 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPA7             (PPS_TC2WO1G2R_TC2WO1_RPA7_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA7 Position */
-#define PPS_TC2WO1G2R_TC2WO1_RPA11            (PPS_TC2WO1G2R_TC2WO1_RPA11_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPA11 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB0             (PPS_TC2WO1G2R_TC2WO1_RPB0_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB0 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB4             (PPS_TC2WO1G2R_TC2WO1_RPB4_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB4 Position */
 #define PPS_TC2WO1G2R_TC2WO1_RPB8             (PPS_TC2WO1G2R_TC2WO1_RPB8_Val << PPS_TC2WO1G2R_TC2WO1_Pos) /* (PPS_TC2WO1G2R) RPB8 Position */
@@ -1799,7 +1711,6 @@
 #define   PPS_TC3WO0G1R_TC3WO0_RPA9_Val       _UINT32_(0xF)                                        /* (PPS_TC3WO0G1R) RPA9  */
 #define   PPS_TC3WO0G1R_TC3WO0_RPA3_Val       _UINT32_(0x1)                                        /* (PPS_TC3WO0G1R) RPA3  */
 #define   PPS_TC3WO0G1R_TC3WO0_RPA7_Val       _UINT32_(0x2)                                        /* (PPS_TC3WO0G1R) RPA7  */
-#define   PPS_TC3WO0G1R_TC3WO0_RPA11_Val      _UINT32_(0x3)                                        /* (PPS_TC3WO0G1R) RPA11  */
 #define   PPS_TC3WO0G1R_TC3WO0_RPB0_Val       _UINT32_(0x4)                                        /* (PPS_TC3WO0G1R) RPB0  */
 #define   PPS_TC3WO0G1R_TC3WO0_RPB4_Val       _UINT32_(0x5)                                        /* (PPS_TC3WO0G1R) RPB4  */
 #define   PPS_TC3WO0G1R_TC3WO0_RPB8_Val       _UINT32_(0x6)                                        /* (PPS_TC3WO0G1R) RPB8  */
@@ -1815,7 +1726,6 @@
 #define PPS_TC3WO0G1R_TC3WO0_RPA9             (PPS_TC3WO0G1R_TC3WO0_RPA9_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPA9 Position */
 #define PPS_TC3WO0G1R_TC3WO0_RPA3             (PPS_TC3WO0G1R_TC3WO0_RPA3_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPA3 Position */
 #define PPS_TC3WO0G1R_TC3WO0_RPA7             (PPS_TC3WO0G1R_TC3WO0_RPA7_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPA7 Position */
-#define PPS_TC3WO0G1R_TC3WO0_RPA11            (PPS_TC3WO0G1R_TC3WO0_RPA11_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPA11 Position */
 #define PPS_TC3WO0G1R_TC3WO0_RPB0             (PPS_TC3WO0G1R_TC3WO0_RPB0_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPB0 Position */
 #define PPS_TC3WO0G1R_TC3WO0_RPB4             (PPS_TC3WO0G1R_TC3WO0_RPB4_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPB4 Position */
 #define PPS_TC3WO0G1R_TC3WO0_RPB8             (PPS_TC3WO0G1R_TC3WO0_RPB8_Val << PPS_TC3WO0G1R_TC3WO0_Pos) /* (PPS_TC3WO0G1R) RPB8 Position */
@@ -1847,7 +1757,6 @@
 #define   PPS_TC3WO0G3R_TC3WO0_RPA0_Val       _UINT32_(0x7)                                        /* (PPS_TC3WO0G3R) RPA0  */
 #define   PPS_TC3WO0G3R_TC3WO0_RPA4_Val       _UINT32_(0x8)                                        /* (PPS_TC3WO0G3R) RPA4  */
 #define   PPS_TC3WO0G3R_TC3WO0_RPA8_Val       _UINT32_(0x9)                                        /* (PPS_TC3WO0G3R) RPA8  */
-#define   PPS_TC3WO0G3R_TC3WO0_RPA12_Val      _UINT32_(0xA)                                        /* (PPS_TC3WO0G3R) RPA12  */
 #define   PPS_TC3WO0G3R_TC3WO0_RPB1_Val       _UINT32_(0xB)                                        /* (PPS_TC3WO0G3R) RPB1  */
 #define   PPS_TC3WO0G3R_TC3WO0_RPB5_Val       _UINT32_(0xC)                                        /* (PPS_TC3WO0G3R) RPB5  */
 #define   PPS_TC3WO0G3R_TC3WO0_RPB9_Val       _UINT32_(0xD)                                        /* (PPS_TC3WO0G3R) RPB9  */
@@ -1863,7 +1772,6 @@
 #define PPS_TC3WO0G3R_TC3WO0_RPA0             (PPS_TC3WO0G3R_TC3WO0_RPA0_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPA0 Position */
 #define PPS_TC3WO0G3R_TC3WO0_RPA4             (PPS_TC3WO0G3R_TC3WO0_RPA4_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPA4 Position */
 #define PPS_TC3WO0G3R_TC3WO0_RPA8             (PPS_TC3WO0G3R_TC3WO0_RPA8_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPA8 Position */
-#define PPS_TC3WO0G3R_TC3WO0_RPA12            (PPS_TC3WO0G3R_TC3WO0_RPA12_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPA12 Position */
 #define PPS_TC3WO0G3R_TC3WO0_RPB1             (PPS_TC3WO0G3R_TC3WO0_RPB1_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPB1 Position */
 #define PPS_TC3WO0G3R_TC3WO0_RPB5             (PPS_TC3WO0G3R_TC3WO0_RPB5_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPB5 Position */
 #define PPS_TC3WO0G3R_TC3WO0_RPB9             (PPS_TC3WO0G3R_TC3WO0_RPB9_Val << PPS_TC3WO0G3R_TC3WO0_Pos) /* (PPS_TC3WO0G3R) RPB9 Position */
@@ -1881,14 +1789,12 @@
 #define   PPS_TC3WO1G2R_TC3WO1_RPA0_Val       _UINT32_(0xF)                                        /* (PPS_TC3WO1G2R) RPA0  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPA4_Val       _UINT32_(0x1)                                        /* (PPS_TC3WO1G2R) RPA4  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPA8_Val       _UINT32_(0x2)                                        /* (PPS_TC3WO1G2R) RPA8  */
-#define   PPS_TC3WO1G2R_TC3WO1_RPA12_Val      _UINT32_(0x3)                                        /* (PPS_TC3WO1G2R) RPA12  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB1_Val       _UINT32_(0x4)                                        /* (PPS_TC3WO1G2R) RPB1  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB5_Val       _UINT32_(0x5)                                        /* (PPS_TC3WO1G2R) RPB5  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB9_Val       _UINT32_(0x6)                                        /* (PPS_TC3WO1G2R) RPB9  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB13_Val      _UINT32_(0x7)                                        /* (PPS_TC3WO1G2R) RPB13  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPA3_Val       _UINT32_(0x8)                                        /* (PPS_TC3WO1G2R) RPA3  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPA7_Val       _UINT32_(0x9)                                        /* (PPS_TC3WO1G2R) RPA7  */
-#define   PPS_TC3WO1G2R_TC3WO1_RPA11_Val      _UINT32_(0xA)                                        /* (PPS_TC3WO1G2R) RPA11  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB0_Val       _UINT32_(0xB)                                        /* (PPS_TC3WO1G2R) RPB0  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB4_Val       _UINT32_(0xC)                                        /* (PPS_TC3WO1G2R) RPB4  */
 #define   PPS_TC3WO1G2R_TC3WO1_RPB8_Val       _UINT32_(0xD)                                        /* (PPS_TC3WO1G2R) RPB8  */
@@ -1897,14 +1803,12 @@
 #define PPS_TC3WO1G2R_TC3WO1_RPA0             (PPS_TC3WO1G2R_TC3WO1_RPA0_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA0 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPA4             (PPS_TC3WO1G2R_TC3WO1_RPA4_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA4 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPA8             (PPS_TC3WO1G2R_TC3WO1_RPA8_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA8 Position */
-#define PPS_TC3WO1G2R_TC3WO1_RPA12            (PPS_TC3WO1G2R_TC3WO1_RPA12_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA12 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB1             (PPS_TC3WO1G2R_TC3WO1_RPB1_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB1 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB5             (PPS_TC3WO1G2R_TC3WO1_RPB5_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB5 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB9             (PPS_TC3WO1G2R_TC3WO1_RPB9_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB9 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB13            (PPS_TC3WO1G2R_TC3WO1_RPB13_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB13 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPA3             (PPS_TC3WO1G2R_TC3WO1_RPA3_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA3 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPA7             (PPS_TC3WO1G2R_TC3WO1_RPA7_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA7 Position */
-#define PPS_TC3WO1G2R_TC3WO1_RPA11            (PPS_TC3WO1G2R_TC3WO1_RPA11_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPA11 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB0             (PPS_TC3WO1G2R_TC3WO1_RPB0_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB0 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB4             (PPS_TC3WO1G2R_TC3WO1_RPB4_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB4 Position */
 #define PPS_TC3WO1G2R_TC3WO1_RPB8             (PPS_TC3WO1G2R_TC3WO1_RPB8_Val << PPS_TC3WO1G2R_TC3WO1_Pos) /* (PPS_TC3WO1G2R) RPB8 Position */
@@ -6562,4 +6466,4 @@ typedef struct
 
 
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _002_PPS_COMPONENT_H_ */
+#endif /* _BZ45_PPS_COMPONENT_H_ */

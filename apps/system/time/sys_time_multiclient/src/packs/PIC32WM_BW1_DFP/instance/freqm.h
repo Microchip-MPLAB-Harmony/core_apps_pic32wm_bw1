@@ -20,13 +20,13 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_FREQM_INSTANCE_
-#define _002_FREQM_INSTANCE_
+#ifndef _BZ45_FREQM_INSTANCE_
+#define _BZ45_FREQM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for FREQM peripheral ========== */
-#define FREQM_GCLK_ID_MSR                        (2)        
-#define FREQM_GCLK_ID_REF                        (1)        
-#define FREQM_INSTANCE_ID                        (1)        
+#define FREQM_GCLK_ID_MSR                        (2)
+#define FREQM_GCLK_ID_REF                        (1)
+#define FREQM_INSTANCE_ID                        (1)
 
-#endif /* _002_FREQM_INSTANCE_ */
+#endif /* _BZ45_FREQM_INSTANCE_ */

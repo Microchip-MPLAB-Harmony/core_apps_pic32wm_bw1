@@ -271,7 +271,7 @@ void BT_RC_Handler                 ( void );
 /* CMSIS includes */
 #include "core_cm4.h"
 #if defined USE_CMSIS_INIT
-#include "system_002.h"
+#include "system_pic32wm_bw1.h"
 #endif /* USE_CMSIS_INIT */
 
 /* ************************************************************************** */

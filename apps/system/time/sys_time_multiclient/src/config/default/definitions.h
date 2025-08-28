@@ -57,11 +57,11 @@
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "bsp/bsp.h"
 #include "peripheral/tc/plib_tc0.h"
+#include "system/time/sys_time.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "system/time/sys_time.h"
 #include "app.h"
 
 
@@ -78,7 +78,7 @@ extern "C" {
 #define DEVICE_NAME          "PIC32WM_BW1"
 #define DEVICE_ARCH          "CORTEX-M4"
 #define DEVICE_FAMILY        "PIC32CX_BZ2"
-#define DEVICE_SERIES        "002"
+#define DEVICE_SERIES        "BZ45"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 64000000U

@@ -20,12 +20,12 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_DMAC_INSTANCE_
-#define _002_DMAC_INSTANCE_
+#ifndef _BZ45_DMAC_INSTANCE_
+#define _BZ45_DMAC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DMAC peripheral ========== */
-#define DMAC_BURST                               (1)        
+#define DMAC_BURST                               (1)
 #define DMAC_CHANNEL0_INT_SRC                    (6)        /* DMA Channel 0 Interrupt */
 #define DMAC_CHANNEL10_INT_SRC                   (7)        /* DMA Channel 10 Interrupt */
 #define DMAC_CHANNEL11_INT_SRC                   (7)        /* DMA Channel 11 Interrupt */
@@ -42,18 +42,18 @@
 #define DMAC_CHANNEL7_INT_SRC                    (7)        /* DMA Channel 7 Interrupt */
 #define DMAC_CHANNEL8_INT_SRC                    (7)        /* DMA Channel 8 Interrupt */
 #define DMAC_CHANNEL9_INT_SRC                    (7)        /* DMA Channel 9 Interrupt */
-#define DMAC_CH_BITS                             (5)        
-#define DMAC_CH_NUM                              (16)       
-#define DMAC_EVIN_NUM                            (8)        
-#define DMAC_EVOUT_NUM                           (4)        
-#define DMAC_FIFO_SIZE                           (16)       
-#define DMAC_INSTANCE_ID                         (34)       
-#define DMAC_LVL_BITS                            (2)        
-#define DMAC_LVL_NUM                             (4)        
-#define DMAC_QOSCTRL_D_RESETVALUE                (2)        
-#define DMAC_QOSCTRL_F_RESETVALUE                (2)        
-#define DMAC_QOSCTRL_WRB_RESETVALUE              (2)        
-#define DMAC_TRIG_BITS                           (7)        
-#define DMAC_TRIG_NUM                            (85)       
+#define DMAC_CH_BITS                             (5)
+#define DMAC_CH_NUM                              (16)
+#define DMAC_EVIN_NUM                            (8)
+#define DMAC_EVOUT_NUM                           (4)
+#define DMAC_FIFO_SIZE                           (16)
+#define DMAC_INSTANCE_ID                         (34)
+#define DMAC_LVL_BITS                            (2)
+#define DMAC_LVL_NUM                             (4)
+#define DMAC_QOSCTRL_D_RESETVALUE                (2)
+#define DMAC_QOSCTRL_F_RESETVALUE                (2)
+#define DMAC_QOSCTRL_WRB_RESETVALUE              (2)
+#define DMAC_TRIG_BITS                           (7)
+#define DMAC_TRIG_NUM                            (85)
 
-#endif /* _002_DMAC_INSTANCE_ */
+#endif /* _BZ45_DMAC_INSTANCE_ */

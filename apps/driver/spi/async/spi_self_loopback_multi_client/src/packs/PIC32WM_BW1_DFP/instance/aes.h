@@ -20,8 +20,8 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_AES_INSTANCE_
-#define _002_AES_INSTANCE_
+#ifndef _BZ45_AES_INSTANCE_
+#define _BZ45_AES_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for AES peripheral ========== */
@@ -29,7 +29,7 @@
 #define AES_DMAC_ID_WR                           (41)       /* DMA DATA Write trigger */
 #define AES_FOUR_BYTE_OPERATION                  (1)        /* Byte Operation */
 #define AES_GCM                                  (1)        /* GCM */
-#define AES_INSTANCE_ID                          (65)       
+#define AES_INSTANCE_ID                          (65)
 #define AES_KEYLEN                               (2)        /* Key Length */
 
-#endif /* _002_AES_INSTANCE_ */
+#endif /* _BZ45_AES_INSTANCE_ */

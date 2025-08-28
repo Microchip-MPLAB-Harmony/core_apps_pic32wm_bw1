@@ -20,29 +20,29 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_TCC0_INSTANCE_
-#define _002_TCC0_INSTANCE_
+#ifndef _BZ45_TCC0_INSTANCE_
+#define _BZ45_TCC0_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for TCC0 peripheral ========== */
-#define TCC0_CC_NUM                              (6)        
-#define TCC0_DITHERING                           (1)        
-#define TCC0_DMAC_ID_MC_0                        (13)       
-#define TCC0_DMAC_ID_MC_1                        (14)       
-#define TCC0_DMAC_ID_MC_2                        (15)       
-#define TCC0_DMAC_ID_MC_3                        (16)       
-#define TCC0_DMAC_ID_MC_4                        (17)       
-#define TCC0_DMAC_ID_MC_5                        (18)       
-#define TCC0_DMAC_ID_OVF                         (12)       
-#define TCC0_DTI                                 (1)        
-#define TCC0_EXT                                 (31)       
-#define TCC0_GCLK_ID                             (21)       
-#define TCC0_INSTANCE_ID                         (9)        
-#define TCC0_MASTER_SLAVE_MODE                   (1)        
-#define TCC0_OTMX                                (1)        
-#define TCC0_OW_NUM                              (8)        
-#define TCC0_PG                                  (1)        
-#define TCC0_SIZE                                (24)       
-#define TCC0_SWAP                                (1)        
+#define TCC0_CC_NUM                              (6)
+#define TCC0_DITHERING                           (1)
+#define TCC0_DMAC_ID_MC_0                        (13)
+#define TCC0_DMAC_ID_MC_1                        (14)
+#define TCC0_DMAC_ID_MC_2                        (15)
+#define TCC0_DMAC_ID_MC_3                        (16)
+#define TCC0_DMAC_ID_MC_4                        (17)
+#define TCC0_DMAC_ID_MC_5                        (18)
+#define TCC0_DMAC_ID_OVF                         (12)
+#define TCC0_DTI                                 (1)
+#define TCC0_EXT                                 (31)
+#define TCC0_GCLK_ID                             (21)
+#define TCC0_INSTANCE_ID                         (9)
+#define TCC0_MASTER_SLAVE_MODE                   (1)
+#define TCC0_OTMX                                (1)
+#define TCC0_OW_NUM                              (8)
+#define TCC0_PG                                  (1)
+#define TCC0_SIZE                                (24)
+#define TCC0_SWAP                                (1)
 
-#endif /* _002_TCC0_INSTANCE_ */
+#endif /* _BZ45_TCC0_INSTANCE_ */

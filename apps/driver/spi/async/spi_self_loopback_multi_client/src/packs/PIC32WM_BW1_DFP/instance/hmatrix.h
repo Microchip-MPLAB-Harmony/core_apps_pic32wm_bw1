@@ -20,35 +20,35 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_HMATRIX_INSTANCE_
-#define _002_HMATRIX_INSTANCE_
+#ifndef _BZ45_HMATRIX_INSTANCE_
+#define _BZ45_HMATRIX_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for HMATRIX peripheral ========== */
-#define HMATRIX_INSTANCE_ID                      (73)       
-#define HMATRIX_MASTER_CM4_S                     (0)        
-#define HMATRIX_MASTER_CMCC                      (1)        
-#define HMATRIX_MASTER_DMAC_DTRD                 (5)        
-#define HMATRIX_MASTER_DMAC_DTWR                 (4)        
-#define HMATRIX_MASTER_DSU                       (7)        
-#define HMATRIX_MASTER_ICM                       (6)        
-#define HMATRIX_MASTER_NUM                       (8)        
-#define HMATRIX_MASTER_PICOP_IO                  (3)        
-#define HMATRIX_MASTER_PICOP_MEM                 (2)        
-#define HMATRIX_SLAVE_BKUPRAM                    (15)       
-#define HMATRIX_SLAVE_FLASH                      (0)        
-#define HMATRIX_SLAVE_FLASH_ALT                  (1)        
-#define HMATRIX_SLAVE_HPB0                       (7)        
-#define HMATRIX_SLAVE_HPB1                       (8)        
-#define HMATRIX_SLAVE_HPB2                       (9)        
-#define HMATRIX_SLAVE_HPB3                       (10)       
-#define HMATRIX_SLAVE_NUM                        (14)       
-#define HMATRIX_SLAVE_QSPI                       (14)       
-#define HMATRIX_SLAVE_RAMCM4S                    (3)        
-#define HMATRIX_SLAVE_RAMDMACICM                 (6)        
-#define HMATRIX_SLAVE_RAMDMAWR                   (5)        
-#define HMATRIX_SLAVE_RAMPPPDSU                  (4)        
-#define HMATRIX_SLAVE_SDHC0                      (12)       
-#define HMATRIX_SLAVE_SEEPROM                    (2)        
+#define HMATRIX_INSTANCE_ID                      (73)
+#define HMATRIX_MASTER_CM4_S                     (0)
+#define HMATRIX_MASTER_CMCC                      (1)
+#define HMATRIX_MASTER_DMAC_DTRD                 (5)
+#define HMATRIX_MASTER_DMAC_DTWR                 (4)
+#define HMATRIX_MASTER_DSU                       (7)
+#define HMATRIX_MASTER_ICM                       (6)
+#define HMATRIX_MASTER_NUM                       (8)
+#define HMATRIX_MASTER_PICOP_IO                  (3)
+#define HMATRIX_MASTER_PICOP_MEM                 (2)
+#define HMATRIX_SLAVE_BKUPRAM                    (15)
+#define HMATRIX_SLAVE_FLASH                      (0)
+#define HMATRIX_SLAVE_FLASH_ALT                  (1)
+#define HMATRIX_SLAVE_HPB0                       (7)
+#define HMATRIX_SLAVE_HPB1                       (8)
+#define HMATRIX_SLAVE_HPB2                       (9)
+#define HMATRIX_SLAVE_HPB3                       (10)
+#define HMATRIX_SLAVE_NUM                        (14)
+#define HMATRIX_SLAVE_QSPI                       (14)
+#define HMATRIX_SLAVE_RAMCM4S                    (3)
+#define HMATRIX_SLAVE_RAMDMACICM                 (6)
+#define HMATRIX_SLAVE_RAMDMAWR                   (5)
+#define HMATRIX_SLAVE_RAMPPPDSU                  (4)
+#define HMATRIX_SLAVE_SDHC0                      (12)
+#define HMATRIX_SLAVE_SEEPROM                    (2)
 
-#endif /* _002_HMATRIX_INSTANCE_ */
+#endif /* _BZ45_HMATRIX_INSTANCE_ */

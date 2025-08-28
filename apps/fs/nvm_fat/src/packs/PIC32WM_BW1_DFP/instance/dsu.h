@@ -20,13 +20,13 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_DSU_INSTANCE_
-#define _002_DSU_INSTANCE_
+#ifndef _BZ45_DSU_INSTANCE_
+#define _BZ45_DSU_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DSU peripheral ========== */
-#define DSU_DMAC_ID_DCC0                         (2)        
-#define DSU_DMAC_ID_DCC1                         (3)        
-#define DSU_INSTANCE_ID                          (32)       
+#define DSU_DMAC_ID_DCC0                         (2)
+#define DSU_DMAC_ID_DCC1                         (3)
+#define DSU_INSTANCE_ID                          (32)
 
-#endif /* _002_DSU_INSTANCE_ */
+#endif /* _BZ45_DSU_INSTANCE_ */

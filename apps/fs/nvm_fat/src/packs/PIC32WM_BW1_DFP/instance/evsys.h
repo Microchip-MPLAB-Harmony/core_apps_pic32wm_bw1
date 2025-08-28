@@ -20,12 +20,12 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_EVSYS_INSTANCE_
-#define _002_EVSYS_INSTANCE_
+#ifndef _BZ45_EVSYS_INSTANCE_
+#define _BZ45_EVSYS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for EVSYS peripheral ========== */
-#define EVSYS_ASYNCHRONOUS_CHANNELS              (0xFFFFF000) 
+#define EVSYS_ASYNCHRONOUS_CHANNELS              (0xFFFFF000)
 #define EVSYS_CHANNELS                           (32)       /* Total Number of Channels */
 #define EVSYS_CHANNELS_BITS                      (5)        /* Number of bits to select Channel */
 #define EVSYS_EXTEVT_NUM                         (0)        /* Number of External Event Generators */
@@ -43,10 +43,10 @@
 #define EVSYS_GCLK_ID_9                          (17)       /* Index of Generic Clock 9 */
 #define EVSYS_GENERATORS                         (69)       /* Total Number of Event Generators */
 #define EVSYS_GENERATORS_BITS                    (7)        /* Number of bits to select Event Generator */
-#define EVSYS_INSTANCE_ID                        (35)       
+#define EVSYS_INSTANCE_ID                        (35)
 #define EVSYS_SYNCH_NUM                          (12)       /* Number of Synchronous Channels */
 #define EVSYS_SYNCH_NUM_BITS                     (4)        /* Number of bits to select Synchronous Channels */
 #define EVSYS_USERS                              (52)       /* Total Number of Event Users */
 #define EVSYS_USERS_BITS                         (6)        /* Number of bits to select Event User */
 
-#endif /* _002_EVSYS_INSTANCE_ */
+#endif /* _BZ45_EVSYS_INSTANCE_ */

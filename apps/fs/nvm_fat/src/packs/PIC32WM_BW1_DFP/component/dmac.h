@@ -20,8 +20,10 @@
  */
 
 /*  file generated from device description file (ATDF) version 2024-12-05T09:04:59Z  */
-#ifndef _002_DMAC_COMPONENT_H_
-#define _002_DMAC_COMPONENT_H_
+#ifndef _BZ45_DMAC_COMPONENT_H_
+#define _BZ45_DMAC_COMPONENT_H_
+
+#include "core_cm4.h"
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR DMAC                      */
@@ -932,4 +934,4 @@ typedef struct
  #endif
 #endif
 
-#endif /* _002_DMAC_COMPONENT_H_ */
+#endif /* _BZ45_DMAC_COMPONENT_H_ */

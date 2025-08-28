@@ -83,7 +83,7 @@ extern "C" {
 #define DEVICE_NAME          "PIC32WM_BW1"
 #define DEVICE_ARCH          "CORTEX-M4"
 #define DEVICE_FAMILY        "PIC32CX_BZ2"
-#define DEVICE_SERIES        "002"
+#define DEVICE_SERIES        "BZ45"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 64000000U

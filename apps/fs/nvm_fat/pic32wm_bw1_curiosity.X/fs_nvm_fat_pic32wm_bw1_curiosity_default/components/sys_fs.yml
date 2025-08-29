@@ -1,6 +1,6 @@
 configVersion: 1.0.0
 componentName: sys_fs
-coreVersion: 5.8.3-harmony.dev.flag6
+coreVersion: 5.8.2
 device: PIC32WM_BW1
 library: []
 dependency:

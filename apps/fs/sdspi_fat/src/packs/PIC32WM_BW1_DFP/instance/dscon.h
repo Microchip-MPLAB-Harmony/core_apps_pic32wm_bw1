@@ -20,11 +20,11 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_DSCON_INSTANCE_
-#define _002_DSCON_INSTANCE_
+#ifndef _BZ45_DSCON_INSTANCE_
+#define _BZ45_DSCON_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for DSCON peripheral ========== */
-#define DSCON_INSTANCE_ID                        (79)       
+#define DSCON_INSTANCE_ID                        (79)
 
-#endif /* _002_DSCON_INSTANCE_ */
+#endif /* _BZ45_DSCON_INSTANCE_ */

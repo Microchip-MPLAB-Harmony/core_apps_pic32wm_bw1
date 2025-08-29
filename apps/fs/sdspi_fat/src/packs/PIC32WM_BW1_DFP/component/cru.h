@@ -20,8 +20,10 @@
  */
 
 /*  file generated from device description file (ATDF) version 2024-12-05T09:04:59Z  */
-#ifndef _002_CRU_COMPONENT_H_
-#define _002_CRU_COMPONENT_H_
+#ifndef _BZ45_CRU_COMPONENT_H_
+#define _BZ45_CRU_COMPONENT_H_
+
+#include "core_cm4.h"
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR CRU                       */
@@ -1695,4 +1697,4 @@ typedef struct
 
 
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _002_CRU_COMPONENT_H_ */
+#endif /* _BZ45_CRU_COMPONENT_H_ */

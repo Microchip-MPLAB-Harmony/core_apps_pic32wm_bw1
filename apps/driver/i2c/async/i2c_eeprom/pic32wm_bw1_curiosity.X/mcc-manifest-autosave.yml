@@ -16,7 +16,7 @@ is_using_prerelease_versions: false
 mcc_content_registries: https://registry.npmjs.org/
 device_library: {library_class: com.microchip.mcc.harmony.Harmony3Library, name: Bundled,
   version: Bundled}
-packs: {name: PIC32WM_DFP, version: 1.0.22}
+packs: {name: PIC32WM_DFP, version: 1.0.29}
 modules:
 - {name: core, type: HARMONY, version: v3.15.5}
 - {name: csp, type: HARMONY, version: v3.23.0}

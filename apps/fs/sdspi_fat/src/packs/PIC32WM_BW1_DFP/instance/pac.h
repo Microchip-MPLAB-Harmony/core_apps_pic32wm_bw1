@@ -20,12 +20,12 @@
  */
 
 /* file generated from device description file (ATDF) version 2024-12-05T09:04:59Z */
-#ifndef _002_PAC_INSTANCE_
-#define _002_PAC_INSTANCE_
+#ifndef _BZ45_PAC_INSTANCE_
+#define _BZ45_PAC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PAC peripheral ========== */
-#define PAC_HPB_NUM                              (4)        
-#define PAC_INSTANCE_ID                          (0)        
+#define PAC_HPB_NUM                              (4)
+#define PAC_INSTANCE_ID                          (0)
 
-#endif /* _002_PAC_INSTANCE_ */
+#endif /* _BZ45_PAC_INSTANCE_ */

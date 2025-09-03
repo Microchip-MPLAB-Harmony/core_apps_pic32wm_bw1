@@ -7,12 +7,6 @@ package:
   version: "v1.0.0"
 
   dependencies:
-    - name: "bsp"
-      type: "package"
-      version: "dev"
-    - name: "FreeRTOS-Kernel"
-      type: "package"
-      version: "V11.1.0"
     - name: "core"
       type: "package"
-      version: "dev"
+      version: "v3.15.5"

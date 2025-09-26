@@ -1,7 +1,6 @@
-﻿![Microchip logo](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png)
-![Harmony logo small](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_mplab_harmony_logo_small.png)
+[![MCHP](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png)](https://www.microchip.com)
 
-# MPLAB® Harmony 3 driver and system service application examples for PIC32WM-BW1 family
+# Harmony 3 driver and system service application examples for PIC32WM-BW1 family
 
 MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices.  Refer to the following links for more information.
 
@@ -11,17 +10,19 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
 - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
 
-This repository contains the MPLAB® Harmony 3 driver and system service application examples for PIC32WM-BW1 family. Quickly incorporate connectivity to your designs with ICs, modules, software and development kits that make connecting effortless for your customers. Our comprehensive replaceme portfolio has the technology to meet your range, data rate, interoperability, frequency and topology needs. Refer to the following links for release notes, training materials, and interface reference information.
+This repository contains the MPLAB® Harmony 3 driver and system service application examples for PIC32WM-BW1 family
 
 - [Release Notes](release_notes.md)
 - [License](License.md)
 
-# Contents Summary
+To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1) and then click **Clone** button to clone this repository or download as zip file.
+This content can also be downloaded using MCC content manager available as part of the MPLAB® X IDE.
 
-| Folder     | Description                                               |
-| ---        | ---                                                       |
-| apps       | Contains driver and system service example applications   |
+## Contents Summary
 
+| Folder     | Description                             |
+|:----------:|:---------------------------------------:|
+| apps       | Contains driver and system service example applications |
 
 ## Code Examples
 
@@ -31,9 +32,12 @@ To view the documentation offline, follow these steps:
  - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-8F75C45F-2795-4D19-AF59-796A7294E9A0?type=webhelp).
  - Extract the zip file into a folder.
  - Navigate to the folder and open **index.html** in a web browser of your choice.
+
 ____
 
 [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1/blob/master/License.md)
+[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1/releases/latest)
+[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1/graphs/commit-activity)
 [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg)]()
 
@@ -48,5 +52,3 @@ ____
 
 [![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg?style=social)]()
 [![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_pic32wm_bw1.svg?style=social)]()
-
-

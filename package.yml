@@ -1,12 +1,15 @@
 package:
   format-version: "1.0.0"
   name: "core_apps_pic32wm_bw1"
+  version: "v1.0.1"
   type: "application"
   status: "production"
   required: false
-  version: "v1.0.0"
 
   dependencies:
-    - name: "core"
+    - name: "FreeRTOS-Kernel"
       type: "package"
-      version: "v3.15.5"
+      version: "V11.1.0"
+    - name: "bsp"
+      type: "package"
+      version: "v3.23.0"

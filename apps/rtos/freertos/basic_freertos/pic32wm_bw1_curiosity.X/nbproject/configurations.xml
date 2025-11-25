@@ -322,7 +322,7 @@
       </toolsSet>
       <packs>
         <pack name="PIC32WM_DFP" vendor="Microchip" version="1.0.29"/>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -466,7 +466,7 @@
         <property key="oXC16ld-stackguard" value="16"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros" value="VECTOR_REGION=boot_rom"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>

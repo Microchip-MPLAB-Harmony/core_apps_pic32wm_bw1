@@ -2,8 +2,8 @@
 
 manifest_file_version: 1.0.0
 project: basic_freertos_pic32wm_bw1_curiosity
-creation_date: 2025-08-28T17:56:37.686+05:30[Asia/Calcutta]
-operating_system: Windows 10
+creation_date: 2025-11-25T10:59:10.504+00:00[UTC]
+operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
 device_name: PIC32WM_BW1

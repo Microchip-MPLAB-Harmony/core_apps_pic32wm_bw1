@@ -2,8 +2,8 @@
 
 manifest_file_version: 1.0.0
 project: fs_sdspi_fat_pic32wm_bw1_curiosity
-creation_date: 2025-08-29T12:19:01.442+05:30[Asia/Calcutta]
-operating_system: Windows 10
+creation_date: 2025-11-25T11:00:18.087+00:00[UTC]
+operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
 device_name: PIC32WM_BW1
